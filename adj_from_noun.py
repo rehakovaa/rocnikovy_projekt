@@ -3,6 +3,15 @@
 import derinet.lexicon as dlex
 import os
 
+"""
+přídavná jména, která jsou:
+- nejspíše odvozena od podstatných jmen (využívám k určení koncovky a jejich hranice ve slově)
+- jsou moc dlouhá
+- mají dva a více kořenůale nemají u sebe žádného předka 
+- pokud jsou podobná nějakému slovu
+ale nemají před sebou žádného předka
+taková přídavná jména se tu snažím odhalit
+"""
     
 def kontrola_slova(lexicon, slovo, koreny):
     for lex in lexicon.iter_lexemes():
