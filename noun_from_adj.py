@@ -4,6 +4,8 @@ import os
 """
 hledám podstatná jména, která jsou odvozena od přídavných jmen, ale nejsou na ně napojena 
 příklady: balzakovací -> balzakovanost
+
+pozn. tenhle test jede fakt dlouho -> chyba nebo v pohodě??
 """
 
 lexicon = dlex.Lexicon()
