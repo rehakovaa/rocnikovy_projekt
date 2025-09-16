@@ -1,3 +1,9 @@
+""" 
+test hledá slova, která jsou označeny v misc Geo a začínají velkým písmenem. poté kontroluje, jestli se v databázi nachází slovo, které je stejné, jen začíná malým písmenem
+pokud k sobě nejsou připojena, tak to splňuje tento test
+
+"""
+
 import derinet.lexicon as dlex
 import os
 
@@ -28,5 +34,6 @@ for lexeme in lexicon.iter_lexemes():
                 seznam.append((lexeme.lemma, slovo.lemma))
                 
 tisk(seznam)
+
 
 
