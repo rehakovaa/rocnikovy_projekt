@@ -1,3 +1,8 @@
+""" 
+hledají se slova, která jsou příslovci, jejichž rodičem by měla být číslovka, ale v databázi žádného rodiče nemají 
+pro zjednodušení vyhledávání se hledají pouze ty příslovce končící na 'é'
+"""
+
 import derinet.lexicon as dlex
 import os
 lexicon = dlex.Lexicon()
@@ -68,6 +73,7 @@ for lexeme in lexicon.iter_lexemes():
                     
 print(len(neexistuje), len(existuje_delsi))
 tisk(neexistuje,existuje_delsi)
+
 
 
             
