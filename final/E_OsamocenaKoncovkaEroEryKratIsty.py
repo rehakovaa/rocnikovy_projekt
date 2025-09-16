@@ -1,3 +1,7 @@
+""" 
+tento test hledá číslovky končící na 'ero', 'erý', 'krát' a 'istý', které jsou bez rodiče, což by neměly být
+"""
+
 import derinet.lexicon as dlex
 import os
 
@@ -124,5 +128,6 @@ for lexeme in lexicon.iter_lexemes():
              
                     
 vypisovani(seznam, bez)
+
 
 
