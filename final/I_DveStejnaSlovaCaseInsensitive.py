@@ -1,3 +1,9 @@
+""" 
+test se zaměřuje na lexémy, kde lemma je naprosto identická, liší se pouze velikostí prvního písmena. tyto lexémy také nesmí mít žádného rodiče a navzájem k sobě nejsou připojena
+ve výstupu se dělí podle toho, jestli mají stejný slovní druh anebo se v něm liší
+pro přehlednost se každá z těchto dvou kategorií vytiskne do vlastního souboru
+"""
+
 import derinet.lexicon as dlex
 import os
 lexicon = dlex.Lexicon()
@@ -48,4 +54,5 @@ for lexeme in lexicon.iter_lexemes():
     
     
 tisknuti("TEST: IDENTICKÁ SLOVA LIŠÍCÍ SE VELIKOSTÍ PRVNÍHO PÍSMENE, KTERÁ K SOBĚ NAVZÁJEM NEJSOU NIJAK PŘIPOJENA A MAJÍ STEJNÝ SLOVNÍ DRUH","I_DveStejnaSlovaCaseInsensitiveA", stejny_typ)
+
 tisknuti("TEST: IDENTICKÁ SLOVA LIŠÍCÍ SE VELIKOSTÍ PRVNÍHO PÍSMENE, KTERÁ K SOBĚ NAVZÁJEM NEJSOU NIJAK PŘIPOJENA A NEMAJÍ STEJNÝ SLOVNÍ DRUH","I_DveStejnaSlovaCaseInsensitiveB", ruzny_typ)
