@@ -43,6 +43,16 @@ current_dir = os.getcwd()  # aktualni adresar
 file_path = os.path.join(current_dir, "./derinet-2-3.tsv")  #sestaveni cesty
 lexicon.load(file_path)
 
+def lezeme_nahoru(dite, hledany): #podívám se, jestli nejsou nějak propojené
+    rodice = dite.all_parents
+    if not rodice:
+        return False  # nedošli jsme k hledanému
+    if hledany in rodice:
+        return True  # hledaný je přímo rodičem
+    for r in rodice:
+        if lezeme_nahoru(r, hledany):  # rekurzivně jdeme dál
+            return True
+    return False  # pokud jsme ho nikdy nenašli
 
 def vzdalene_pribuzny(dite, rodic):
     daleko = False
@@ -125,4 +135,5 @@ for lexeme in lexicon.iter_lexemes():
 
 
 tisk_koncovky(spatny_rod, dobry_rod, spatny_nepripojeno, bez, "MUŽSKÉHO", "ŮV", "E_OsamocenaSlovaKonciciNaUv", vzdalene)
+
 
