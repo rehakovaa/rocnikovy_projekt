@@ -1,3 +1,12 @@
+""" 
+test míří na slova končící na 'ka' bez rodiče
+kvůli tomu, že podobných slov je velké množství a ne všechny vznikly změnou podstatného jména mužského rodu a dodání dané koncovky,
+test se soustředí hlavně na koncovky 'vka', 'čka', 'nka' a 'žka'
+pokud se mi však podařil najít možný předchůdce i pro slova, které končí pouze na 'ka', tato dvojce tu bude uvedena, nebudou tu však uvedena slova, která končí pouze na 'ka' 
+a rodič se jim nepodařil dohledat
+"""
+
+
 import derinet.lexicon as dlex
 import os
 
@@ -129,3 +138,4 @@ for lexeme in lexicon.iter_lexemes():
                             seznam.append((lexeme.lemma, predchudce))
     
 vytisknout(seznam, bez)
+
