@@ -1,3 +1,8 @@
+""" 
+tento test hledá podstatná jména končící na 'ost', která nemají rodiče. jelikož tento test míří na podstatná jména, která vznikla od přídavného jména, je dodáno omezení
+že takovéto slova musí být delší než čtyři písmena (aby se předešlo slovům jako je most)
+"""
+
 import derinet.lexicon as dlex
 import os
 
@@ -60,5 +65,6 @@ for lexeme in lexicon.iter_lexemes():
                     bez.append((lexeme.lemma, hodnota))
 
 tisknuti(seznam, bez)
+
 
 
