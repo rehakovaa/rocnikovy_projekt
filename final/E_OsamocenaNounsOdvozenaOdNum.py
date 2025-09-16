@@ -1,3 +1,9 @@
+""" 
+test hledá podstatná jména odvozená od číslovky, kterým by mohl chybět rodič 
+jelikož je tohle test věnující se úzké a dobře popsatelné skupině lexémů, nachází se zde i lexémy, které sice mají rodiče, ale ne všechny 
+(třeba stodesítka má nad sebou sto, ale chybí mu mezi rodiči deset)
+"""
+
 import derinet.lexicon as dlex
 import os
 
@@ -76,3 +82,4 @@ for lexeme in lexicon.iter_lexemes():
         seznam.append((lexeme.lemma, rodinka))
 
 vypisovani(seznam)
+
