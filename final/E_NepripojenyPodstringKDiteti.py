@@ -1,3 +1,10 @@
+""" 
+hledají se slova, která se nachází v jiném slově jako podstring, ale nejsou k sobě připojeni (ani vzdáleně, tedy že nejsou přes několik hran k sobě připojeni)
+často zde bude například slovo 'super', které se nachází ve spoustě slov, ale není k nim nijak připojeno 
+
+upozornění: test běží dlouho
+"""
+
 import derinet.lexicon as dlex
 import os
 
@@ -62,6 +69,7 @@ for lexeme in lexicon.iter_lexemes():
 # seřazení podle počtu dětí
 mnozina = sorted(mnozina, key=lambda x: len(x[1]), reverse=True)
 tisk(mnozina)
+
 
 
     
