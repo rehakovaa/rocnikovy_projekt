@@ -1,3 +1,13 @@
+""" 
+test se zaměřuje na slova, která se liší pouze v 'h', odpovídá to gothaj a gotaj nebo ethiopský a etiopský, a jak jsou tyto slova navzájem svázaná
+podle jejich navázanosti se to dělí do čtyř kategorií
+    - rodičem je slovo obsahující 'h'
+    - rodičem je slovo bez 'h'
+    - jsou vzdáleně příbuzní (nejsou ihned nad sebou)
+    - nejsou nijak svázáni
+ve výstupu je nejdříve tabulka procentuální rozdělení těchto kategorií a poté jsou tyto kategorie seřazeny od nejčastější po nejméně častou
+"""
+
 import derinet.lexicon as dlex
 import os
 
@@ -111,3 +121,4 @@ for lexeme in lexicon.iter_lexemes():
 dohromady = {"h": h_ano_seznam, "bez_h" : h_ne_seznam, "vubec" : vubec_seznam,  "vzdalene" : vzdalene_seznam}
 print(celkove, h_ano, h_ne, vzdalene, vubec)
 pomery(celkove, h_ano, h_ne, vzdalene, vubec, dohromady)
+
