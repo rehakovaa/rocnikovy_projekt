@@ -15,6 +15,8 @@ current_dir = os.getcwd()  # aktualni adresar
 file_path = os.path.join(current_dir, "./derinet-2-3.tsv")  #sestaveni cesty
 lexicon.load(file_path)
 
+all_lemmas = {lex.lemma for lex in lexicon.iter_lexemes()}
+
 def tisk_koncovky(spatny_rod, dobry_rod, spatny_nepripojeno, bez, rod, koncovka, soubor, vzdalene):
     with open(f"{soubor}.txt", "w", encoding="utf-8") as f:
         f.write(f"PŘÍDAVNÁ JMÉNA KONČÍCÍ NA -{koncovka}, KTERÁ NEJSOU PŘIPOJENA KE SLOVU {rod} RODU \n")
@@ -101,6 +103,7 @@ for lexeme in lexicon.iter_lexemes():
             
 tisk_koncovky(spatny_rod, dobry_rod, spatny_nepripojeno, bez, "ŽENSKÉHO", "ČIN", "E_OsamocenaSlovaKonciciNaCin", vzdalene)
                     
+
 
 
 
