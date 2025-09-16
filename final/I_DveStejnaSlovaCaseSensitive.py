@@ -1,3 +1,10 @@
+""" 
+test hledá lexémy, které jsou identické, ale ani jeden z nich nemá rodiče
+identické ve smyslu, že první písmeno je stejně velké 
+výtisk se dělí podle toho, jestli lexémy sdílí stejný slovní druh a každá kategorie má vlastní soubor
+"""
+
+
 import derinet.lexicon as dlex
 import os
 lexicon = dlex.Lexicon()
@@ -46,4 +53,5 @@ for lexeme in lexicon.iter_lexemes():
 
 tisknuti("TEST: IDENTICKÁ SLOVA, KTERÁ K SOBĚ NAVZÁJEM NEJSOU NIJAK PŘIPOJENA A MAJÍ STEJNÝ SLOVNÍ DRUH","I_DveStejnaSlovaCaseSensitiveA", stejny_typ)
 tisknuti("TEST: IDENTICKÁ SLOVA, KTERÁ K SOBĚ NEJSOU PŘIPOJENA A NESDÍLÍ STEJNÝ SLOVNÍ DRUH","I_DveStejnaSlovaCaseSensitiveB", ruzny_typ)
+
 
