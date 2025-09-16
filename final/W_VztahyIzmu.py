@@ -1,3 +1,9 @@
+""" 
+test se zabývá slovy, které končí na 'izmus' a zkoumá u nich několik vlatností 
+- zda je slovo bez rodiče, a pokud ano, tak zda pro něj existuje verze, kdy slovo končí na 'ismus' 
+- a zda slovo nemá potomka končící na 'ista', a pokud ano, tak zda neexistuje verze 'ismus', pod který by mělo být to dítě připojeno
+"""
+
 import derinet.lexicon as dlex
 import os
 
@@ -54,5 +60,6 @@ for lexeme in lexicon.iter_lexemes():
                         nespojeno.append((lexeme.lemma, d.lemma, rodic))
                 
 tisk(seznam, nespojeno)
+
 
 
