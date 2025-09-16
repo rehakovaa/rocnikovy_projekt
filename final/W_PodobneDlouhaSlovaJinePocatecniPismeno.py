@@ -1,3 +1,8 @@
+""" 
+test hledá lexémy, jejichž rodiče mají podobnou délku, ale liší se v prvním písmenu (ne velikostně, ale v tom, že jsou to dvě rozdílné písmena)
+- jsou vynechány případy, kdy jsou si slova dostatečně podobná anebo slovo začíná na 'apgrejd'
+"""
+
 import derinet.lexicon as dlex
 import os
 
@@ -74,3 +79,4 @@ for lexeme in lexicon.iter_lexemes():
                     mozne.append((lexeme.lemma, i.lemma))
 
 tisk(mozne, seznam)
+
