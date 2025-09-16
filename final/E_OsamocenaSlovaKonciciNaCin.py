@@ -1,3 +1,13 @@
+""" 
+test se věnuje přídavným jménům přivlastňovacím, které končí na 'čin'
+jelikož je to dobře popsatelná skupina, v testu se kontroluje několik možností 
+    - slovo má předchůdce, ale to podstatné jméno není rodu ženského
+    - slovo nemá předchůdce, který by odpovídal vzoru (matčin -> matka)
+        - existuje takové slovo a je rodu ženského
+        - existuje takové slovo, ale není rodu ženského
+        - takové slovo neexistuje 
+"""
+
 import derinet.lexicon as dlex
 import os
 
@@ -63,4 +73,5 @@ for lexeme in lexicon.iter_lexemes():
                 bez.append(lexeme.lemma)
              
 tisk_koncovky(spatny_rod, dobry_rod, spatny_nepripojeno, bez, "ŽENSKÉHO", "ČIN", "E_OsamocenaSlovaKonciciNaCin")
+
                     
