@@ -1,3 +1,8 @@
+""" 
+test se věnuje slovům, kde rodič daného slova je kratší a méně častý 
+jsou vynechány případy, kdy lexém končí na 'ismus', 'izmus' a 'ika' a levenhsteinova vzdálenost mezi tím lexémem a rodičem je menší než 2
+"""
+
 import derinet.lexicon as dlex
 import os
 
@@ -49,5 +54,6 @@ for lexeme in lexicon.iter_lexemes():
                     continue
                 else:
                     seznam.append((lexeme.lemma, i.lemma, levenhstein(lexeme.lemma, i.lemma)))
+
 
 tisk(seznam)
