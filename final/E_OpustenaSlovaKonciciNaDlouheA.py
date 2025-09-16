@@ -1,3 +1,7 @@
+""" 
+v tomto testu se hledají slova, která končí na á, ale nejsou k ničemu připojena (často jsem spadají příjmení)
+"""
+
 import derinet.lexicon as dlex
 import os
 
@@ -69,5 +73,6 @@ for lexeme in lexicon.iter_lexemes():
                                     seznam.append((lexeme.lemma, rodic + "a"))
                                 else:
                                     bez.append(lexeme.lemma)
+
 
 tisk(seznam, bez)
