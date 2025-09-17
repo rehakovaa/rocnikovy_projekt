@@ -73,7 +73,7 @@ def pomery(celkove, h, bez_h, vzdalene, vubec, dohromady):
 
     #chci nejdriv vypsat všechny četnosti a poté je vypsat jejich pořadí  
     with open("I_NestalyVztahyMeziSlovyTypuGothajAGotaj.txt", "w", encoding="utf-8") as f:
-        f.write("S JAKOU ČETNOSTÍ SE V DERINETU NACHÁZÍ SPOJENÍ SLOV, KTERÉ SE LIŠÍM JEDNÍM H \n")
+        f.write("S JAKOU ČETNOSTÍ SE V DERINETU NACHÁZÍ SPOJENÍ SLOV, KTERÉ SE LIŠÍ JEDNÍM H \n")
         f.write("TABULKA ČETNOSTÍ OD NEJČASTĚJŠÍHO VZTAHU DO NEJMÉNĚ ČASTÉHO: \n")
         sortovano = sorted(seznam.items(), key=lambda x: x[1], reverse=True)
         f.write(f"{'TYP VZTAHU'.ljust(70)}{'ČETNOST V PROCENTECH'.ljust(30)}\n")
@@ -131,6 +131,7 @@ for lexeme in lexicon.iter_lexemes():
 dohromady = {"h": h_ano_seznam, "bez_h" : h_ne_seznam, "vubec" : vubec_seznam,  "vzdalene" : vzdalene_seznam}
 print(celkove, h_ano, h_ne, vzdalene, vubec)
 pomery(celkove, h_ano, h_ne, vzdalene, vubec, dohromady)
+
 
 
 
