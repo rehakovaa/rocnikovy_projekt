@@ -84,10 +84,10 @@ def pomery(celkove, h, bez_h, vzdalene, vubec, dohromady):
             f.write("\n")
             f.write(f"{vypis[k].upper()} \n")
             if k == "h" or k == "bez_h":
-                f.write(f"  {'OTEC'.ljust(20)}{'SYN'.ljust(20)}\n")
+                f.write(f"  {'OTEC'.ljust(30)}{'SYN'.ljust(30)}\n")
             seznamik = dohromady[k]
             for i in sorted(seznamik, key=lambda x: x[0]):
-                f.write(f"      {i[0].ljust(20)}{i[1].ljust(20)}\n")
+                f.write(f"      {i[0].ljust(30)}{i[1].ljust(30)}\n")
 
 celkove = 0
 
@@ -131,5 +131,6 @@ for lexeme in lexicon.iter_lexemes():
 dohromady = {"h": h_ano_seznam, "bez_h" : h_ne_seznam, "vubec" : vubec_seznam,  "vzdalene" : vzdalene_seznam}
 print(celkove, h_ano, h_ne, vzdalene, vubec)
 pomery(celkove, h_ano, h_ne, vzdalene, vubec, dohromady)
+
 
 
