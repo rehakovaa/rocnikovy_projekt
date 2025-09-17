@@ -12,6 +12,16 @@ import derinet.lexicon as dlex
 import os
 
 
+def vzdalene_pribuzny(dite, rodic):
+    daleko = False
+    if dite.all_parents != []:
+        for i in dite.all_parents:
+            if lezeme_nahoru(i, rodic):
+                daleko = True
+    if daleko:
+        return True
+    return False
+
 lexicon = dlex.Lexicon()
 current_dir = os.getcwd()  # aktualni adresar
 file_path = os.path.join(current_dir, "./derinet-2-3.tsv")  #sestaveni cesty
@@ -47,9 +57,9 @@ def jsou_pribuzni(bez_h, h):
     else:
         #pokud to není ani jedno, tak se podíváme, jestli nejsou příbuzní oklikou
         #je gotaj nějak dítětem gothaje?
-        etiopie = lezeme_nahoru(otec_bez, otec_h)
+        etiopie = vzdalene_pribuzni(otec_bez, otec_h)
         #je gothaj nějak dítětem gotaje?
-        gothaj = lezeme_nahoru(otec_h, otec_bez)
+        gothaj = vzdalene_pribuzni(otec_h, otec_bez)
 
         if etiopie or gothaj:
             return 2
@@ -121,4 +131,5 @@ for lexeme in lexicon.iter_lexemes():
 dohromady = {"h": h_ano_seznam, "bez_h" : h_ne_seznam, "vubec" : vubec_seznam,  "vzdalene" : vzdalene_seznam}
 print(celkove, h_ano, h_ne, vzdalene, vubec)
 pomery(celkove, h_ano, h_ne, vzdalene, vubec, dohromady)
+
 
