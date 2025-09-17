@@ -12,7 +12,7 @@ import derinet.lexicon as dlex
 import os
 
 
-def vzdalene_pribuzny(dite, rodic):
+def vzdalene_pribuzni(dite, rodic):
     daleko = False
     if dite.all_parents != []:
         for i in dite.all_parents:
@@ -131,6 +131,7 @@ for lexeme in lexicon.iter_lexemes():
 dohromady = {"h": h_ano_seznam, "bez_h" : h_ne_seznam, "vubec" : vubec_seznam,  "vzdalene" : vzdalene_seznam}
 print(celkove, h_ano, h_ne, vzdalene, vubec)
 pomery(celkove, h_ano, h_ne, vzdalene, vubec, dohromady)
+
 
 
 
