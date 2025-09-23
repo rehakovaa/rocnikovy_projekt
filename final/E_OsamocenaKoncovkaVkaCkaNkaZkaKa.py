@@ -2,13 +2,10 @@
 test míří na slova končící na 'ka' bez rodiče
 kvůli tomu, že podobných slov je velké množství a ne všechny vznikly změnou podstatného jména mužského rodu a dodání dané koncovky,
 test se soustředí hlavně na koncovky 'vka', 'čka', 'nka' a 'žka'
-pokud se mi však podařil najít možný předchůdce i pro slova, které končí pouze na 'ka', tato dvojce tu bude uvedena, nebudou tu však uvedena slova, která končí pouze na 'ka' 
-a rodič se jim nepodařil dohledat
 """
-
-
 import derinet.lexicon as dlex
 import os
+import opakovane_funkce
 
 lexicon = dlex.Lexicon()
 current_dir = os.getcwd()  # aktualni adresar
@@ -17,66 +14,25 @@ lexicon.load(file_path)
 
 all_lemmas = {lex.lemma for lex in lexicon.iter_lexemes()}
 
-def nejlepsi(kandidati):
-    hodnota = 0
-    nejvyssi = None 
-    for i in kandidati:
-        #ještě bych sem mohla přidat kontrolu, že je to rodu mužského, ale to nevím, jestli by zvládl derinet
-        #jestli bych se nepřipravil o to slovo
-        if i != None:
-            slovo = lexicon.get_lexemes(i)[0]
-            if slovo.misc.get('corpus_stats') and slovo.misc['corpus_stats']['relative_frequency'] > hodnota:
-                nejvyssi = slovo.lemma
-                hodnota = slovo.misc['corpus_stats']['relative_frequency']    
-
-    return nejvyssi 
-
-def test(nove):
-    kandidati = set()
-    for i in "aeioyu":
-        if nove + i in all_lemmas:
-            slovicko = nove + i
-            if slovicko in all_lemmas:
-                kandidati.add(slovicko)
-    return kandidati
-
 def mozny_predek(predchudce):
     if predchudce in all_lemmas:
         return predchudce
     else:
         if predchudce[-1] not in "aáeěiíoóuůúyý":
-            dalsi = test(predchudce)
+            dalsi = opakovane_funkce.test(predchudce)
             if len(dalsi) > 1:
-                return nejlepsi(dalsi)
+                return opakovane_funkce.nejlepsi(dalsi, lexicon)
             elif len(dalsi) == 1:
                 return dalsi.pop()
             else:
                 return None
-
-def vytisknout(seznam, bez):
-    with open("E_OsamocenaKoncovkaVkaCkaNkaZka_Ka.txt", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
-        f.write("PODSTATNÁ JMÉNA ŽENSKÉHO RODU KONČÍCÍ NA SPECIÁLNÍ PŘÍPADY 'KA' A JSOU BEZ PŘEDKA \n")
-        f.write("SPECIÁLNÍ PŘÍPADY: VKA, ČKA, NKA, ŽKA A TA SLOVA KONČÍCÍ NA KA, U KTERÝCH BYL NALEZEN PŘEDEK \n")
-        f.write("pozn. nedokážu totiž efektivně rozlišit slova končící na 'ka', která mají mít předka a která ne")
-        f.write("\n")
-        f.write("PODSTATNÁ JMÉNA, KE KTERÝM BYL NALEZEN PŘEDEK \n")
-        f.write(f"{'PODSTATNÉ JMÉNO'.ljust(20)}{'PŘEDEK'.ljust(20)}\n")
-        for i in seznam:
-            f.write(f"{i[0].ljust(20)}{i[1].ljust(20)}\n")
-
-        f.write("\n")
-        f.write("PODSTATNÁ JMÉNA, PRO NĚŽ NEBYL NALEZEN PŘEDCHŮDCE\n")
-        for i in bez:
-            f.write(f"{i} \n")
-
-
 
 seznam = []
 bez = []
 
 def hledani_predka(predek, dite):
     kandidati = {lemma for lemma in all_lemmas if predek in lemma and len(predek) < len(lemma) and lemma != dite and len(dite) > len(lemma)}
-    vysledny = nejlepsi(kandidati)
+    vysledny = opakovane_funkce.nejlepsi(kandidati, lexicon)
     return vysledny
 
 for lexeme in lexicon.iter_lexemes():
@@ -120,7 +76,7 @@ for lexeme in lexicon.iter_lexemes():
                                 hotovo = True
 
                         if not hotovo:
-                            bez.append(lexeme.lemma)
+                            bez.append(lexeme)
                     
 
                     #pedagožka a pedagog
@@ -130,12 +86,15 @@ for lexeme in lexicon.iter_lexemes():
                         if predchudce in all_lemmas:
                             seznam.append((lexeme.lemma, predchudce))
                         else:
-                            bez.append(lexeme.lemma)
+                            bez.append(lexeme)
                         
                     else: #teď pořešit skandinavistka a skandinavista
                         vysledek = mozny_predek(predchudce)
                         if vysledek is not None:
                             seznam.append((lexeme.lemma, predchudce))
-    
-vytisknout(seznam, bez)
+                        else:
+                            bez.append(lexeme)
 
+bez = opakovane_funkce.je_spravne_bez_rodice(bez)
+
+opakovane_funkce.vypis_dva_seznamy(seznam, bez,"E_OsamocenaKoncovkaVkaCkaNkaZkaKa.tsv", "opuštěná slova končící na 'vka', 'čka', 'nka', 'žka', 'ka'")
