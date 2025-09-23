@@ -12,70 +12,18 @@ existují případy, kdy je antinacistův pod nacistův
 
 import derinet.lexicon as dlex
 import os
-
-
-def tisk_koncovky(spatny_rod, dobry_rod, spatny_nepripojeno, bez, rod, koncovka, soubor, vzdalene):
-    with open(f"{soubor}.txt", "w", encoding="utf-8") as f:
-        f.write(f"PŘÍDAVNÁ JMÉNA KONČÍCÍ NA -{koncovka}, KTERÁ NEJSOU PŘIPOJENA KE SLOVU {rod} RODU \n")
-        f.write(f"{'PŘÍDAVNÉ JMÉNO'.ljust(20)}{'PODSTATNÉ JMÉNO'.ljust(20)}\n")
-        f.write("\n")
-        f.write(f"JE PŘIPOJENO KE SLOVU, KTERÉ NENÍ {rod} RODU\n")
-        for i in spatny_rod:
-            f.write(f"{i[0].ljust(20)}{i[1].ljust(20)}\n")
-        f.write("\n")
-        f.write("JSOU VZDÁLENĚ PŘÍBUZNÍ\n")
-        f.write(f"{'VZDÁLENÝ SYN'.ljust(20)}{'VZDÁLENÝ PŘEDEK'.ljust(20)}\n")
-        for i in vzdalene:
-            f.write(f"{i[0].ljust(20)}{i[1].ljust(20)}\n")
-        f.write("\n")
-        f.write(f"NENÍ PŘIPOJENO K PŘEDKOVI, KTERÝ JE {rod} RODU \n")
-        for i in dobry_rod:
-            f.write(f"{i[0].ljust(20)}{i[1].ljust(20)}\n")
-        f.write(f"EXISTUJE NEPŘIPOJENÝ PŘEDEK, KTERÝ NENÍ {rod} RODU\n")
-        for i in spatny_nepripojeno:
-            f.write(f"{i[0].ljust(20)}{i[1].ljust(20)}\n")
-        f.write("NEBYL NALEZEN PŘEDEK \n")
-        for i in bez:
-            f.write(f"{i} \n")
-
-lexicon = dlex.Lexicon()
-current_dir = os.getcwd()  # aktualni adresar
-file_path = os.path.join(current_dir, "./derinet-2-3.tsv")  #sestaveni cesty
-lexicon.load(file_path)
-
-def lezeme_nahoru(dite, hledany): #podívám se, jestli nejsou nějak propojené
-    rodice = dite.all_parents
-    if not rodice:
-        return False  # nedošli jsme k hledanému
-    if hledany in rodice:
-        return True  # hledaný je přímo rodičem
-    for r in rodice:
-        if lezeme_nahoru(r, hledany):  # rekurzivně jdeme dál
-            return True
-    return False  # pokud jsme ho nikdy nenašli
-
-def vzdalene_pribuzny(dite, rodic):
-    daleko = False
-    if dite.all_parents != []:
-        for i in dite.all_parents:
-            if lezeme_nahoru(i, rodic):
-                daleko = True
-    if daleko:
-        return True
-    return False
-    
+import opakovane_funkce
 
 def tvorba_predka(slovo):
     temp = slovo[:-2]
     nove = temp[0:-1]
     nove2 = temp[-1]
     slovicko = nove + "e" + nove2
-    slovicko1 = slovo[:-2] + "a"
-    return slovicko, slovicko1
+    return slovicko
     
 def hledani_predka(lexeme):
     rodice = lexeme.all_parents
-    pomocnik1, pomocnik2 = tvorba_predka(lexeme.lemma)
+    pomocnik = tvorba_predka(lexeme.lemma)
     jeden = False # jestli jsme našli nějakou předkyni
     jiny = False # pokud jsme ale nasli predka, co neni muzsky, ale sedí do popisu
     slovo = None
@@ -85,7 +33,7 @@ def hledani_predka(lexeme):
             re = r.lemma[:-1]
         if re.endswith("os"):
             re = r.lemma[:-2]
-        if r and (re == pomocnik1 or re==pomocnik2 or re == lexeme.lemma[:-2]):
+        if r and (re == pomocnik or re == lexeme.lemma[:-2]):
             jiny = True 
             if r.pos == "NOUN" and "Gender" in r.feats.keys() and r.feats["Gender"] == "Masc":
                 jeden = True
@@ -95,11 +43,18 @@ def hledani_predka(lexeme):
 
     return jeden, jiny, slovo
 
+
+lexicon = dlex.Lexicon()
+current_dir = os.getcwd()  # aktualni adresar
+file_path = os.path.join(current_dir, "./derinet-2-3.tsv")  #sestaveni cesty
+lexicon.load(file_path)
+
+
 all_lemmas = {lex.lemma for lex in lexicon.iter_lexemes()}
 spatny_rod, dobry_rod, spatny_nepripojeno, bez = [], [], [], []#špatný rod - předek není ženský 
 #dobrý rod - není připojen, ale je ženský, spatny_nepripojeno - nepřipojený předek a ještě není ženský
 # bez - bez predka
-
+vzdalene = []
 for lexeme in lexicon.iter_lexemes():
     if lexeme.lemma.endswith("ův") and lexeme.pos == "ADJ": #and not test_samohlasek(lexeme.lemma[:-3]):
         #tady je to dobře, protože to má být hned nad dítětem
@@ -120,9 +75,9 @@ for lexeme in lexicon.iter_lexemes():
                 lex = lexicon.get_lexemes(lexeme.lemma[:-2])[0]
 
             if lex is not None: 
-                if vzdalene_pribuzny(lexeme, lex):
+                if opakovane_funkce.vzdalene_pribuzny(lexeme, lex):
                     vzdalene.append((lexeme.lemma, lex.lemma))
-                elif vzdalene_pribuzny(lex, lexeme):
+                elif opakovane_funkce.vzdalene_pribuzny(lex, lexeme):
                     vzdalene.append((lexeme.lemma, lex.lemma))
                     
                 else:
@@ -133,7 +88,4 @@ for lexeme in lexicon.iter_lexemes():
             else:
                 bez.append(lexeme.lemma)
 
-
-tisk_koncovky(spatny_rod, dobry_rod, spatny_nepripojeno, bez, "MUŽSKÉHO", "ŮV", "E_OsamocenaSlovaKonciciNaUv", vzdalene)
-
-
+opakovane_funkce.vypis_matcin_otcuv(spatny_rod, dobry_rod, spatny_nepripojeno, bez, "mužského", "ův", "E_OsamocenaSlovaKonciciNaUv.tsv", vzdalene)
