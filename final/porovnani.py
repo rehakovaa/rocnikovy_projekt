@@ -1,24 +1,4 @@
-def lezeme_nahoru(dite, hledany): #podívám se, jestli nejsou nějak propojené
-    rodice = dite.all_parents
-    if not rodice:
-        return False  # nedošli jsme k hledanému
-    if hledany in rodice:
-        return True  # hledaný je přímo rodičem
-    for r in rodice:
-        if lezeme_nahoru(r, hledany):  # rekurzivně jdeme dál
-            return True
-    return False  # pokud jsme ho nikdy nenašli
-
-
-def vzdalene_pribuzni(dite, rodic):
-    daleko = False
-    if dite.all_parents != []:
-        for i in dite.all_parents:
-            if lezeme_nahoru(i, rodic):
-                daleko = True
-    if daleko:
-        return True
-    return False
+import opakovane_funkce
 
 #chci zjistit, jestli jsou ta slova k sobě nějak navázaná, i když ne napřimo
 def jsou_pribuzni(bez_h, h, lexicon):
@@ -36,9 +16,9 @@ def jsou_pribuzni(bez_h, h, lexicon):
     else:
         #pokud to není ani jedno, tak se podíváme, jestli nejsou příbuzní oklikou
         #je gotaj nějak dítětem gothaje?
-        etiopie = vzdalene_pribuzni(otec_bez, otec_h)
+        etiopie = opakovane_funkce.vzdalene_pribuzni(otec_bez, otec_h)
         #je gothaj nějak dítětem gotaje?
-        gothaj = vzdalene_pribuzni(otec_h, otec_bez)
+        gothaj = opakovane_funkce.vzdalene_pribuzni(otec_h, otec_bez)
 
         if etiopie or gothaj:
             return 2
@@ -51,21 +31,21 @@ def pomery(celkove, h, bez_h, vzdalene, vubec, dohromady, soubor, vypisy):
     
     #chci nejdriv vypsat všechny četnosti a poté je vypsat jejich pořadí  
     with open(soubor, "w", encoding="utf-8") as f:
-        f.write("S JAKOU ČETNOSTÍ SE V DERINETU NACHÁZÍ SPOJENÍ SLOV, KTERÉ SE LIŠÍ VYNECHÁNÍM PÍSMENA, KTERÁ JE ZA SEBOU DVAKRÁT \n")
-        f.write("TABULKA ČETNOSTÍ OD NEJČASTĚJŠÍHO VZTAHU DO NEJMÉNĚ ČASTÉHO: \n")
+        f.write("*s jakou četností se liší slova s rozdílem jednoho písmena\n")
+        f.write("*tabulka četností sestupně \n")
         sortovano = sorted(seznam.items(), key=lambda x: x[1], reverse=True)
-        f.write(f"{'TYP VZTAHU'.ljust(70)}{'ČETNOST V PROCENTECH'.ljust(30)}\n")
+        f.write(f"*typ vztahu\tčetnost v procentech\n")
         for k, v in sortovano:
-            f.write(f"{vypisy[k].ljust(70)}{str(v).ljust(30)} \n")
+            f.write(f"*{vypisy[k]}\t{str(v)}\n")
 
         for k, v in sortovano: #kdyz tam dodam with, tak se mi to samo zavre
-            f.write("\n")
-            f.write(f"{vypisy[k].upper()} \n")
+            f.write("*\n")
+            f.write(f"*{vypisy[k]}\n")
             if k == "h" or k == "bez_h":
-                f.write(f"{'OTEC'.ljust(70)}{'SYN'.ljust(70)}\n")
+                f.write(f"*otec\tsyn\n")
             seznamik = dohromady[k]
             for i in sorted(seznamik, key=lambda x: x[0]):
-                f.write(f"      {i[0].ljust(70)}{i[1].ljust(70)}\n")
+                f.write(f"{i[0]}\t{i[1]}\n")
 
 def analyzuj_vztahy(lexicon, all_lemmas, generator_kandidatu, soubor, vypisy):
     celkove = 0
