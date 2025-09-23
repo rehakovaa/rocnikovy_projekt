@@ -1,26 +1,18 @@
+""" 
+test hledá slova jako terorista, která jsou osamocena a snaží se k nim najít rodiče
+"""
+
+
 import derinet.lexicon as dlex
 import os
+import opakovane_funkce
+
 lexicon = dlex.Lexicon()
 adresar = os.getcwd()  # aktuální adresář
 cesta_k_souboru = os.path.join(adresar, "./derinet-2-3.tsv")  #sestavení cesty
 lexicon.load(cesta_k_souboru)
 
 all_lemmas = {lex.lemma for lex in lexicon.iter_lexemes()}
-
-def vypis(seznam, bez):
-    with open("OsamocenaKoncovkaIsta.txt", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
-        f.write("TEST HLEDÁ SLOVA KONČÍCÍ NA 'ISTA', KTERÁ BY MĚLA BÝT NAD SEBOU RODIČE, ALE NEMAJÍ \n")
-        f.write("DVĚ SKUPINY: NALEZEN RODIČ A NENALEZEN RODIČ \n")
-        f.write(f"MOŽNÝ PŘEDEK EXISTUJE \n")
-        f.write("UKÁZKA VÝPISU: \n")
-        f.write(f"{'NALEZENÉ SLOVO'.ljust(20)}{'MOŽNÝ PŘEDEK'.ljust(20)}\n")
-        f.write("\n")
-        for i in seznam:
-            f.write(f"{i[0].ljust(20)}{i[1].ljust(20)}\n")  
-        f.write("\n")
-        f.write("PRO SLOVO NEBYL NALEZEN PŘEDEK \n")
-        for i in bez:
-            f.write(f"{i} \n")
 
 #seřazuju je podle četnosti a chci vzít tu nejlepsi
 def nejlepsi(kandidati):
@@ -121,5 +113,6 @@ for lexeme in lexicon.iter_lexemes():
                 else:
                     bez.append(lexeme.lemma)
 
-vypis(seznam, bez)
+opakovane_funkce.vypis_dva_seznamy(seznam, bez,"OsamocenaKoncovkaIsta.txt", "opuštěná nouns končící na 'ista' (populista)")
+
                 
