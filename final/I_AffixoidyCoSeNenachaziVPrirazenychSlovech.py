@@ -8,24 +8,12 @@ takže tam radši nechám všechny
 
 import derinet.lexicon as dlex
 import os
+import opakovane_funkce
 
 lexicon = dlex.Lexicon()
 current_dir = os.getcwd()  # aktualni adresar
 file_path = os.path.join(current_dir, "./derinet-2-3.tsv")  #sestaveni cesty
 lexicon.load(file_path)
-
-def vypis(seznam):
-    with open("I_AffixoidyCoSeNenachaziVPrirazenychSlovech.txt", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
-        f.write("NALEZENÉ AFFIXOIDY, KTERÉ NEJSOU OBSAŽENY VE SLOVECH, KTERÉ JSOU K NIM PŘIŘAZENY \n")
-        f.write("UKÁZKA VÝPISU:\n")
-        f.write("affixoid")
-        f.write(f"  dite \n")
-        f.write("\n")
-        for slovo, deti in sorted(seznam, key=lambda x: len(x[1]), reverse=True):
-            f.write(f"{slovo} \n")
-            for i in deti:
-                f.write(f"  {i}\n")
-            f.write("\n")
 
 seznam = []
 for lexeme in lexicon.iter_lexemes():
@@ -42,4 +30,4 @@ for lexeme in lexicon.iter_lexemes():
         if deti != []:
             seznam.append((slovo, deti))
 
-vypis(seznam)
+opakovane_funkce.vypis_jeden_seznam_vic_moznosti(seznam, "I_AffixoidyCoSeNenachaziVPrirazenychSlovech.tsv", "affixoidy, které se nenachází ve svých dětech")
