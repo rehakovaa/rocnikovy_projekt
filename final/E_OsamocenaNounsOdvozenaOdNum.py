@@ -3,10 +3,8 @@ test hledá podstatná jména odvozená od číslovky, kterým by mohl chybět r
 jelikož je tohle test věnující se úzké a dobře popsatelné skupině lexémů, nachází se zde i lexémy, které sice mají rodiče, ale ne všechny 
 (třeba stodesítka má nad sebou sto, ale chybí mu mezi rodiči deset)
 """
-
 import derinet.lexicon as dlex
 import os
-
 
 prevod = {
     "jednička" : "jedna",
@@ -27,17 +25,12 @@ file_path = os.path.join(current_dir, "./derinet-2-3.tsv")  #sestaveni cesty
 lexicon.load(file_path)
 
 def vypisovani(seznamik):
-    with open("E_OsamocenaNounsOdvozenaOdNum.txt", "w", encoding="utf-8") as f:
-        f.write("PODSTATNÁ JMÉNA ODVOZENÁ OD ČÍSLOVEK, ALE NEJSOU K NIM PŘIPOJENA \n")
-        f.write("PŘÍKLAD TISKU: \n")
-        f.write("podstatné jméno \n")
-        f.write(f"  číslovka \n")
-        f.write("\n")
-
-        for pod, cisla in seznamik:
-            f.write(f"{pod}\n")
-            for i in cisla:
-                f.write(f"  {i}\n")
+    with open("E_OsamocenaNounsOdvozenaOdNum.tsv", "w", encoding="utf-8") as f:
+        f.write("*osamocená nouns,která by měla být připojena k číslovkám\n")
+        f.write(f"*zkoumané slovo\tnalezené slovo'\n")
+        for lemma, rodice in sorted(seznamik):
+            for i in rodice:
+                f.write(f"{lemma}\t{i}\n")
 
 seznam = []
 for lexeme in lexicon.iter_lexemes():
@@ -82,4 +75,3 @@ for lexeme in lexicon.iter_lexemes():
         seznam.append((lexeme.lemma, rodinka))
 
 vypisovani(seznam)
-
