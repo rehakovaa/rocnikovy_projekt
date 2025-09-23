@@ -18,7 +18,7 @@ prirazeni = {
 }
 
 def vypis(neexistuje, existuje, bez):
-    with open("E_OsamocenaCislovkovaPrislovce.txt", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
+    with open("E_OsamocenaCislovkovaPrislovce.tsv", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
         f.write("*osamocená číslovková příslovce\n")
         f.write("*existuje jeden možný rodič\n")
         f.write(f"*zkoumané slovo\tnalezené slovo'\n")
@@ -74,3 +74,4 @@ vypis(neexistuje,existuje_delsi, bez)
 
 
             
+
