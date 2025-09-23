@@ -35,4 +35,5 @@ vypisky= {
 }# spuštění pro obě varianty
 
 porovnani.analyzuj_vztahy(lexicon, all_lemmas, kandidati_zdvojene,
-                "I_NestaleVztahyMeziSlovyTypuHubertAHubbert.txt", vypisky)
+
+                "I_NestaleVztahyMeziSlovyTypuHubertAHubbert.tsv", vypisky)
