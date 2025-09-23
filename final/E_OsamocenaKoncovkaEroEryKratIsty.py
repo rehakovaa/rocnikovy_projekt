@@ -1,7 +1,6 @@
 """ 
 tento test hledá číslovky končící na 'ero', 'erý', 'krát' a 'istý', které jsou bez rodiče, což by neměly být
 """
-
 import derinet.lexicon as dlex
 import os
 
@@ -12,6 +11,7 @@ lexicon.load(file_path)
 
 all_lemmas = {lex.lemma for lex in lexicon.iter_lexemes()}
 
+#hledám všechny možné číslovky, které by mohly být předky
 def tvorba_predku():
     predci = set()
     for lex in lexicon.iter_lexemes(): 
@@ -19,6 +19,8 @@ def tvorba_predku():
             predci.add(lex.lemma)
     return predci 
 
+#hledám ta slova, která jsou podstringy těch, co zkoumám a na konec provedu zkoušku, aby rodiči nebyly zároveň sto a stodva
+#ale jenom stodva
 def hledani_predku(predci, dite):
     mozni = set()
     for lex in predci:
@@ -35,28 +37,22 @@ def hledani_predku(predci, dite):
     return mozni.difference(konecny)
 
 def vypisovani(existuji, neexistuji):
-    with open("E_OsamocenaKoncovkaEroEryKratIsty.txt", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
-        f.write("ČÍSLOVKY KONČÍCÍ NA 'ERO', 'ERÝ', 'KRÁT', 'ISTÝ', KTERÉ JSOU BEZ RODIČE \n")
-        f.write("ČÍSLOVKY S NALEZENÝMI PŘEDKY: \n")
+    with open("E_OsamocenaKoncovkaEroEryKratIsty.tsv", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
+        f.write("*osamocené číslovky končící na 'ero', 'erý', 'krát', 'istý'\n")
+        f.write("*nalezený předek\n")
 
-        f.write("PŘÍKLAD TISKU: \n")
-        f.write("číslovka \n")
-        f.write(f"  předek\n")
-        f.write("\n")
-
+        f.write(f"*zkoumané slovo\tnalezené slovo'\n")
+        f.write("*\n")
         for pod, cisla in sorted(existuji, key=lambda x: len(x[1]), reverse=False):
-            f.write(f"{pod}\n")
             for i in cisla:
-                f.write(f"  {i}\n")
-
-        f.write("\n")
-        f.write("ČÍSLOVKY, PRO KTERÉ NEBYL NALEZEN PŘEDEK: \n")
-        f.write("\n")
+                f.write(f"{pod}\t{i}\n") 
+        f.write("*\n")
+        f.write("*nenalezen předek\n")
+        f.write("*\n")
         for i in neexistuji:
-            f.write(f"{i} \n")
+            f.write(f"{i}\n")
 
-#mireno na slova jako desatero, devátý,
-
+#mireno na slova jako desatero, devátý
 seznam = []
 bez = []
 predci = tvorba_predku()
@@ -128,6 +124,5 @@ for lexeme in lexicon.iter_lexemes():
              
                     
 vypisovani(seznam, bez)
-
 
 
