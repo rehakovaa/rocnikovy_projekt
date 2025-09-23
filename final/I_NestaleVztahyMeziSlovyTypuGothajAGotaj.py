@@ -37,4 +37,4 @@ vypisky = {"h" : "rodičem v tomto vztahu je slovo obsahující 'h' navíc",
             "vzdalene": "tato dvojice slov je příbuzná, ale ne napřímo"}
 
 porovnani.analyzuj_vztahy(lexicon, all_lemmas, bez_h,
-                "I_NestaleVztahyMeziSlovyTypuGothajAGotaj.txt", vypisky)
+                "I_NestaleVztahyMeziSlovyTypuGothajAGotaj.tsv", vypisky)
