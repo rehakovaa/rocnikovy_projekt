@@ -1,5 +1,12 @@
+""" 
+test hledá slovesa končící na 'řit' (běžkařit) bez rodiče
+pokud rodič nebyl nalezen, zkontroluje se, zda slovo není unmotivated, pokud je, vyřadí se z testu
+"""
+
 import derinet.lexicon as dlex
 import os
+import opakovane_funkce
+
 lexicon = dlex.Lexicon()
 adresar = os.getcwd()  # aktuální adresář
 cesta_k_souboru = os.path.join(adresar, "./derinet-2-3.tsv")  #sestavení cesty
@@ -7,67 +14,15 @@ lexicon.load(cesta_k_souboru)
 
 all_lemmas = {lex.lemma for lex in lexicon.iter_lexemes()}
 
-def vypis(seznam_dobry, seznam_spatny, bez):
-    with open("E_OsamocenaSlovesaKonciciNaRit.txt", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
-        f.write("TEST HLEDÁ SLOVESA KONČÍCÍ NA 'ŘIT', KTERÁ BY MĚLA BÝT NAD SEBOU RODIČE, ALE NEMAJÍ \n")
-        f.write("TŘI SKUPINY: NALEZEN RODIČ, KTERÝ JE ČASTĚJŠÍ NEŽ SLOVO, NALEZEN RODIČ, KTERÝ JE MÉNĚ ČASTÝ NEŽ SLOVO, NENAŠEL SE RODIČ \n")
-        f.write("UKÁZKA VÝPISU: \n")
-        f.write(f"{'NALEZENÉ SLOVO'.ljust(20)}{'MOŽNÝ PŘEDEK'.ljust(20)}\n")
-        f.write("\n")
-        f.write(f"MOŽNÝ PŘEDEK JE ČASTĚJŠÍ \n")
-        for i in seznam_dobry:
-            f.write(f"{i[0].ljust(20)}{i[1].ljust(20)}\n")  
-        f.write("\n")
-        f.write("MOŽNÝ PŘEDEK JE MÉNĚ ČASTÝ \n")
-        for i in seznam_spatny:
-            f.write(f"{i[0].ljust(20)}{i[1].ljust(20)}\n")  
-        f.write("\n")
-        f.write("PRO SLOVO NEBYL NALEZEN PŘEDEK \n")
-        for i in bez:
-            f.write(f"{i} \n")
-
-def je_spravne_bez_rodice(bez):
-    spravne = []
-
-    for i in bez:
-        if 'unmotivated' in i.misc.keys() and i.misc['unmotivated']:
-            continue
-        else:
-            spravne.append(i.lemma)
-
-    return spravne
-
-def kontrola_rodice(rodic, dite):
-    celkovy_rodic = lexicon.get_lexemes(rodic)[0]
-    if 'corpus_stats' in celkovy_rodic.misc.keys():
-        if 'absolute_count' in celkovy_rodic.misc['corpus_stats'].keys() and 'absolute_count' in dite.misc['corpus_stats'].keys():
-            pozornost_rodic = celkovy_rodic.misc['corpus_stats']['absolute_count']
-            pozornost_dite = dite.misc['corpus_stats']['absolute_count']
-
-            if pozornost_rodic > pozornost_dite:
-                return True
-    
-    return False
-
-def muze_se_pridat(rodic, lexeme, seznam_dobry, seznam_spatny):
-    if kontrola_rodice(rodic, lexeme):
-        seznam_dobry.append((lexeme.lemma, rodic))
-        #if len(rodic) < len(lexeme.lemma) - 1:
-            #f.write(f"{lexeme.lemma} {rodic} \n")
-    else: 
-        seznam_spatny.append((lexeme.lemma, rodic))
-
-    return seznam_dobry, seznam_spatny 
-
 def koncovky(lexeme, slovo): 
     seznamik_dobry = []
     seznamik_spatny = []
     if slovo[:-2] in all_lemmas: 
         rodic = slovo[:-2]
-        seznamik_dobry, seznamik_spatny = muze_se_pridat(rodic, lexeme, [], [])
+        seznamik_dobry, seznamik_spatny = opakovane_funkce.muze_se_pridat(rodic, lexeme, [], [], lexicon)
     elif slovo[:-3] in all_lemmas:
         rodic = slovo[:-3]
-        seznamik_dobry, seznamik_spatny = muze_se_pridat(rodic, lexeme, [], [])
+        seznamik_dobry, seznamik_spatny = opakovane_funkce.muze_se_pridat(rodic, lexeme, [], [], lexicon)
 
     zmena = not seznamik_dobry == [] or not seznamik_spatny == []
     
@@ -86,12 +41,12 @@ for lexeme in lexicon.iter_lexemes():
         if not hotovo:
             if lexeme.lemma[1:] in all_lemmas:
                 rodic = lexeme.lemma[1:]
-                pomocnik_dobry, pomocnik_spatny = muze_se_pridat(rodic, lexeme, [], [])
+                pomocnik_dobry, pomocnik_spatny = opakovane_funkce.muze_se_pridat(rodic, lexeme, [], [], lexicon)
                 hotovo = True
 
             elif lexeme.lemma[2:] in all_lemmas:
                 rodic = lexeme.lemma[2:]
-                pomocnik_dobry, pomocnik_spatny = muze_se_pridat(rodic, lexeme, [], [])
+                pomocnik_dobry, pomocnik_spatny = opakovane_funkce.muze_se_pridat(rodic, lexeme, [], [], lexicon)
                 hotovo = True
             
             if not hotovo:
@@ -105,7 +60,7 @@ for lexeme in lexicon.iter_lexemes():
             if not hotovo:
                 if lexeme.lemma[:-4] in all_lemmas:
                     rodic = lexeme.lemma[:-4]
-                    pomocnik_dobry, pomocnik_spatny = muze_se_pridat(rodic, lexeme, [], [])
+                    pomocnik_dobry, pomocnik_spatny = opakovane_funkce.muze_se_pridat(rodic, lexeme, [], [], lexicon)
                     hotovo = True
 
             if not hotovo:
@@ -114,6 +69,6 @@ for lexeme in lexicon.iter_lexemes():
         seznam_dobry.extend(pomocnik_dobry)
         seznam_spatny.extend(pomocnik_spatny)
 
-bez = je_spravne_bez_rodice(bez)
-vypis(seznam_dobry, seznam_spatny, bez)
+bez = opakovane_funkce.je_spravne_bez_rodice(bez)
+opakovane_funkce.vypis_tri_seznamy(seznam_dobry, seznam_spatny, bez,"E_OsamocenaSlovesaKonciciNaRit.tsv", "osamocená slovesa končící na 'řit' (běžkařit)")
         #bezka -> bezkar -> bezkarit
