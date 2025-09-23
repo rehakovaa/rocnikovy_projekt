@@ -35,5 +35,6 @@ vypisky = {"h" : "rodičem v tomto vztahu je slovo obsahující 'z' místo 's' "
             "vzdalene": "tato dvojice slov je příbuzná, ale ne napřímo"}
 
 porovnani.analyzuj_vztahy(lexicon, all_lemmas, zmena_z,
-                "I_NestaleVztahyMeziSlovyTypuAlfonsAAlfonz.txt", vypisky)
+                "I_NestaleVztahyMeziSlovyTypuAlfonsAAlfonz.tsv", vypisky)
+
                 
