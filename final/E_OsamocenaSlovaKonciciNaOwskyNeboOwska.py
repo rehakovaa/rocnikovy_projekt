@@ -1,5 +1,10 @@
+""" 
+test hledá slova, která končí na 'owský' nebo 'owská', co jsou bez rodiče a hledá k nim možné rodiče
+"""
+
 import derinet.lexicon as dlex
 import os
+
 lexicon = dlex.Lexicon()
 current_dir = os.getcwd()  # aktualni adresar
 file_path = os.path.join(current_dir, "./derinet-2-3.tsv")  #sestaveni cesty
@@ -8,30 +13,24 @@ lexicon.load(file_path)
 all_lemmas = {lex.lemma for lex in lexicon.iter_lexemes()}
 
 def vypis(seznam_dva,seznam, bez):
-    with open("E_OsamocenaSlovaKonciciNaOwskyNeboOwska", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
-        f.write("OSAMOCENÁ SLOVA KONČÍCÍ NA -OWSKÝ NEBO -OWSKÁ \n")
-        f.write("BUĎ JSEM NENAŠLA DVA MOŽNÉ RODIČE, JEDNOHO MOŽNÉHO ANEBO ŽÁDNÉHO \n")
-        f.write("\n")
-        f.write("NEJDŘÍVE SLOVA S DVĚMA MOŽNÝMI RODIČI: \n")
-        f.write("UKÁZKA VÝPISU: \n")
-        f.write(f"{'SLOVO'.ljust(30)}{'RODIČ 1'.ljust(20)}{'RODIČ 2'.ljust(10)}\n")
+    with open("E_OsamocenaSlovaKonciciNaOwskyNeboOwska.tsv", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
+        f.write("*osamocená slova končící na 'owský' nebo 'owská'\n")
+        f.write("*nalezeni dva možní rodiče, jeden možný anebo žádný\n")
+        f.write("*\n")
+        f.write("*dva rodiče\n")
+        f.write(f"*zkoumané slovo\tnalezené slovo'\n")
         f.write("\n")
         for slovo, rodice in sorted(seznam_dva, key=lambda x: x[0]):
-            f.write(f"{slovo.ljust(30)}{rodice[0].ljust(20)}{rodice[1].ljust(10)}\n")
-        f.write("\n")
-        f.write("SLOVA S JEDNÍM MOŽNÝM RODIČEM: \n")
-        f.write(f"{'SLOVO'.ljust(20)}{'MOŽNÝ RODIČ'.ljust(10)}\n")
-        f.write("\n")
+            f.write(f"{slovo}\t{rodice[0]}\n")
+            f.write(f"{slovo}\t{rodice[1]}\n")
+        f.write("*\n")
+        f.write("*jeden možný rodič\n")
         for slovo, rodic in sorted(seznam, key=lambda x: x[0]):
-            f.write(f"{slovo.ljust(20)}{rodic.ljust(10)}\n")
-        f.write("\n")
-        f.write("SLOVA BEZ MOŽNÝCH RODIČŮ: \n")
-        f.write("UKÁZKA VÝPISU: \n")
-        f.write("SLOVO \n")
-        f.write("\n")
+            f.write(f"{slovo}\t{rodic}\n")
+        f.write("*\n")
+        f.write("*rodič nenalezen\n")
         for i in sorted(bez):
-            f.write(f"{i} \n")
-
+            f.write(f"{i}\n")
 
 seznam = []
 seznam_dva = []
