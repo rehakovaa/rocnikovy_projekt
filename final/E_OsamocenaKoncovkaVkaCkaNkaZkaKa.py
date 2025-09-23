@@ -19,7 +19,7 @@ def mozny_predek(predchudce):
         return predchudce
     else:
         if predchudce[-1] not in "aáeěiíoóuůúyý":
-            dalsi = opakovane_funkce.test(predchudce)
+            dalsi = tvorba_novych_variant_kratke(predchudce, all_lemmas)
             if len(dalsi) > 1:
                 return opakovane_funkce.nejlepsi(dalsi, lexicon)
             elif len(dalsi) == 1:
@@ -98,3 +98,4 @@ for lexeme in lexicon.iter_lexemes():
 bez = opakovane_funkce.je_spravne_bez_rodice(bez)
 
 opakovane_funkce.vypis_dva_seznamy(seznam, bez,"E_OsamocenaKoncovkaVkaCkaNkaZkaKa.tsv", "opuštěná slova končící na 'vka', 'čka', 'nka', 'žka', 'ka'")
+
