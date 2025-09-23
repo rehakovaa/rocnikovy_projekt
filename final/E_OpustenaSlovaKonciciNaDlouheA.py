@@ -4,6 +4,7 @@ v tomto testu se hledají slova, která končí na á, ale nejsou k ničemu při
 
 import derinet.lexicon as dlex
 import os
+import opakovane_funkce
 
 lexicon = dlex.Lexicon()
 current_dir = os.getcwd()  # aktualni adresar
@@ -14,21 +15,6 @@ all_lemmas = {lex.lemma for lex in lexicon.iter_lexemes()}
 
 seznam = []
 bez = []
-
-def tisk(seznam, bez):   
-    with open("E_OpustenaSlovaKonciciNaDlouheA.txt", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
-        f.write("SLOVA KONČÍCÍ NA 'Á, KTERÁ NEJSOU K NIČEMU PŘIPOJENA")
-        f.write("SEZNAM TĚCH, KE KTERÝM BYL NALEZEN POTENCIÁLNÍ PŘEDEK\n")
-        f.write(f"{'NALEZENÉ SLOVO'.ljust(20)}{'MOŽNÝ PŘEDEK'.ljust(20)}\n")
-        f.write("\n")
-        for i in seznam: 
-            f.write(f"{i[0].ljust(20)}{i[1].ljust(20)}\n")
-        f.write("\n")
-
-        f.write("SEZNAM TĚCH, KE KTERÝM PŘEDEK NEBYL NALEZEN \n")
-        f.write("NALEZENÉ SLOVO \n")
-        for i in bez:
-            f.write(f"{i}\n")
         
 all_lemmas1 = {lemma.lower() for lemma in all_lemmas}
 
@@ -74,5 +60,5 @@ for lexeme in lexicon.iter_lexemes():
                                 else:
                                     bez.append(lexeme.lemma)
 
+opakovane_funkce.vypis_dva_seznamy(seznam, bez,"E_OpustenaSlovaKonciciNaDlouheA.tsv", "opuštěná slova končící na 'á'")
 
-tisk(seznam, bez)
