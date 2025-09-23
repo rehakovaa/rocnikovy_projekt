@@ -48,6 +48,7 @@ for lexeme in lexicon.iter_lexemes():
                     bez.append((lexeme.lemma, hodnota))
 
 
-opakovane_funkce.vypis_dva_seznamy(seznam, sorted(bez, key=lambda x: x[1]),"E_OsamocenaKoncovkaOst.txt", "opuštěná slova končící na 'ost'")
+opakovane_funkce.vypis_dva_seznamy(seznam, sorted(bez, key=lambda x: x[1]),"E_OsamocenaKoncovkaOst.tsv", "opuštěná slova končící na 'ost'")
+
 
 
