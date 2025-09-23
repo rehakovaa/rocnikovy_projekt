@@ -113,6 +113,7 @@ for lexeme in lexicon.iter_lexemes():
                 else:
                     bez.append(lexeme.lemma)
 
-opakovane_funkce.vypis_dva_seznamy(seznam, bez,"OsamocenaKoncovkaIsta.txt", "opuštěná nouns končící na 'ista' (populista)")
+opakovane_funkce.vypis_dva_seznamy(seznam, bez,"OsamocenaKoncovkaIsta.tsv", "opuštěná nouns končící na 'ista' (populista)")
 
                 
+
