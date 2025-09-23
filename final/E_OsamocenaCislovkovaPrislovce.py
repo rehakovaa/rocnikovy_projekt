@@ -17,29 +17,26 @@ prirazeni = {
     "tisícát": "tisíc",
 }
 
-def tisk(neexistuje, existuje_delsi):
+def vypis(neexistuje, existuje, bez):
     with open("E_OsamocenaCislovkovaPrislovce.txt", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
-        f.write("ČÍSLOVKOVÁ PŘÍSLOVCE, KTERÁ NEJSOU K NIČEMU PŘIPOJENA")
-        f.write("\n")
-        f.write("EXISTUJE PŘÍDAVNÉ JMÉNO, KE KTERÉMU SE MOHOU PŘIPOJIT:\n")
-        f.write(f"{'PŘÍSLOVCE'.ljust(20)}{'PŘÍDAVNÉ JMÉNO'.ljust(20)}\n")
-        f.write("\n")
-        for adv, adj in sorted(existuje_delsi):
-            f.write(f"{adv.ljust(20)}{adj.ljust(20)}\n")
-        
-        f.write("\n")
-        f.write("NEEXISTUJE JEDNO PŘÍDAVNÉ JMÉNO, KE KTERÉMU BY SE TO DALO PŘIPOJIT \n")
+        f.write("*osamocená číslovková příslovce\n")
+        f.write("*existuje jeden možný rodič\n")
+        f.write(f"*zkoumané slovo\tnalezené slovo'\n")
+        for i in sorted(existuje): 
+            f.write(f"{i[0]}\t{i[1]}\n")
+        f.write("*\n")
+        f.write("*víc možných rodičů\n")
         for lemma, rodice in sorted(neexistuje):
-            f.write(f"{lemma.ljust(20)}")
-            if rodice:
-                f.write("\n   možní rodiče: ")
-                f.write(", ".join(rodice))
-                f.write("\n")
-            else:
-                f.write(f"nezařazeno \n")
+            for i in rodice:
+                f.write(f"{lemma}\t{i}\n")
+        f.write("*\n")
+        f.write("*nenalezen předek")
+        for i in bez:
+            f.write(f"{i[0]}\n")
 
 existuje_delsi = set()
 neexistuje = []
+bez = []
 all_lemmas = {lex.lemma for lex in lexicon.iter_lexemes()}
 
 for lexeme in lexicon.iter_lexemes():
@@ -68,12 +65,12 @@ for lexeme in lexicon.iter_lexemes():
                     if slovo[:-1] == k:
                         kandidat.append(prirazeni[k])
 
-                
-                neexistuje.append((lexeme.lemma, kandidat))
+                if kandidat != []:
+                    neexistuje.append((lexeme.lemma, kandidat))
+                else:
+                    bez.append(lexeme.lemma)
                     
-print(len(neexistuje), len(existuje_delsi))
-tisk(neexistuje,existuje_delsi)
-
+vypis(neexistuje,existuje_delsi, bez)
 
 
             
