@@ -13,22 +13,26 @@ file_path = os.path.join(current_dir, "./derinet-2-3.tsv")  #sestaveni cesty
 lexicon.load(file_path)
 
 videno = set()
-stejny_typ, ruzny_typ = set(), set()
-
+stejny_typ = set()
+ruzny_typ = set()
+            #ted 1.2 - různá velikost začínajících písmen
 for lexeme in lexicon.iter_lexemes():
-    if lexeme not in videno: #pokud už jsem to slovo testoval, tak ho přeskočím
-        dalsi = lexicon.get_lexemes(lemma=lexeme.lemma)
-        if len(dalsi) > 1:
-            dalsi.remove(lexeme) #takhle předejdu tomu, abych zpracoval stejné slovo dvakrát 
+    if lexeme.lemma not in videno and not lexeme.lemma.startswith("-"):
+        cast = lexeme.lemma[1:]
+        pismeno = lexeme.lemma[0].swapcase()
+        lexeme1 = pismeno + cast #přetvořím si to slovo tak, aby tady bylo na začátku obrácená velikost písmena
+        for lex in lexicon.get_lexemes(lemma=lexeme1): #najdu jestli, tam je nějaké obrácené velikosti
             videno.add(lexeme)
-            for lex in dalsi:
-                if lexeme.all_parents == [] and lex.all_parents == []:
-                    if lexeme.pos != lex.pos: #pokud mají různé typy
-                        ruzny_typ.add((lexeme.lemma, lex.lemma, lex.pos))
-                        #f.write(f"{lexeme.lemma}, {lex.lemma} -  RŮZNÉ typy: {lexeme.pos}, {lex.pos} \n") #nejdříve původní, potom nalezlý
-                    else:
-                        stejny_typ.add((lexeme.lemma, lex.lemma, lexeme.pos, lex.pos))
-                        #f.write(f"{lexeme.lemma}, {lex.lemma} - STEJNÝ typ: {lex.pos} \n")
-
-opakovane_funkce.vypis_identicka_slova("identická slova se stejným slovním druhem","I_DveStejnaSlovaCaseSensitiveA", stejny_typ)
-opakovane_funkce.vypis_identicka_slova("identická slova s různým slovním druhem","I_DveStejnaSlovaCaseSensitiveB", ruzny_typ)
+            videno.add(lex)
+            #oboje tam přidám
+            if lexeme.all_parents == [] and lex.all_parents == []:
+                if lexeme.pos != lex.pos: #pokud mají různé typy
+                    ruzny_typ.add((lexeme.lemma, lex.lemma, lex.pos))
+                    #f.write(f"{lexeme.lemma}, {lex.lemma} -  RŮZNÉ typy: {lexeme.pos}, {lex.pos} \n") #nejdříve původní, potom nalezlý
+                else:
+                    stejny_typ.add((lexeme.lemma, lex.lemma, lexeme.pos, lex.pos ))
+                    #f.write(f"{lexeme.lemma}, {lex.lemma} - STEJNÝ typ: {lex.pos} \n")
+    
+    
+opakovane_funkce.vypis_identicka_slova("identická slova s rozdílnou velikostí prvního písmene a stejným slovním druhem","I_DveStejnaSlovaCaseInsensitiveA", stejny_typ)
+opakovane_funkce.vypis_identicka_slova("identická slova s rozdílnou velikostí prvního písmene a různým slovním druhem","I_DveStejnaSlovaCaseInsensitiveB", ruzny_typ)
