@@ -6,6 +6,7 @@ pokud k sobě nejsou připojena, tak to splňuje tento test
 
 import derinet.lexicon as dlex
 import os
+import opakovane_funkce
 
 lexicon = dlex.Lexicon()
 current_dir = os.getcwd()  # aktualni adresar
@@ -13,16 +14,6 @@ file_path = os.path.join(current_dir, "./derinet-2-3.tsv")  #sestaveni cesty
 lexicon.load(file_path)
 
 all_lemmas = {lex.lemma for lex in lexicon.iter_lexemes()}
-
-#absurdistán by měl být odvozen od Absurdistánu?? nebo nějak naopak 
-def tisk(seznam):
-    with open("E_GeografickeNazvyCaseSensitive.txt", "w", encoding="utf-8") as f: #kdyz tam dodam with, tak se mi to samo zavre
-        f.write("GEOGRAFICKÉ POJMY, KTERÉ MAJÍ IDENTICKÉ SLOVO ZAČÍNAJÍCÍ MALÝM PÍSMENEM A NEJSOU K SOBĚ PŘIPOJENI \n")
-        f.write(f"{'GEOGRAFICKÝ POJEM'.ljust(20)}{'ODVOZENÉ SLOVO'.ljust(20)}\n")
-        f.write("\n")
-        for i in seznam: 
-            f.write(f"{i[0].ljust(20)}{i[1].ljust(20)}\n")
-
 seznam = []
 
 for lexeme in lexicon.iter_lexemes():
@@ -33,7 +24,12 @@ for lexeme in lexicon.iter_lexemes():
             if lexeme not in slovo.all_parents and slovo not in lexeme.all_parents:
                 seznam.append((lexeme.lemma, slovo.lemma))
                 
-tisk(seznam)
+opakovane_funkce.vypis_jeden_seznam(seznam, "E_GeografickeNazvyCaseSensitive.txt", 
+                                    "geografické pojmy začínající velkým písmenem, které mají identické slovo v derinetu začínající malým písmenem a nejsou k sobě připojeni")
+
+
+
+
 
 
 
