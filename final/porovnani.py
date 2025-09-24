@@ -1,7 +1,7 @@
 import opakovane_funkce
 
 #chci zjistit, jestli jsou ta slova k sobě nějak navázaná, i když ne napřimo
-def jsou_pribuzni(bez_h, h, lexicon):
+def jsou_pribuzny(bez_h, h, lexicon):
     otec_h = lexicon.get_lexemes(h)[0]
     rodice_h = otec_h.all_parents
     otec_bez = lexicon.get_lexemes(bez_h)[0]
@@ -16,9 +16,9 @@ def jsou_pribuzni(bez_h, h, lexicon):
     else:
         #pokud to není ani jedno, tak se podíváme, jestli nejsou příbuzní oklikou
         #je gotaj nějak dítětem gothaje?
-        etiopie = opakovane_funkce.vzdalene_pribuzni(otec_bez, otec_h)
+        etiopie = opakovane_funkce.vzdalene_pribuzny(otec_bez, otec_h)
         #je gothaj nějak dítětem gotaje?
-        gothaj = opakovane_funkce.vzdalene_pribuzni(otec_h, otec_bez)
+        gothaj = opakovane_funkce.vzdalene_pribuzny(otec_h, otec_bez)
 
         if etiopie or gothaj:
             return 2
@@ -30,7 +30,7 @@ def pomery(celkove, h, bez_h, vzdalene, vubec, dohromady, soubor, vypisy):
     seznam = { "h": h/celkove*100, "bez_h" : bez_h/celkove*100, "vubec" : vubec/celkove*100,  "vzdalene" : vzdalene/celkove*100}
     
     #chci nejdriv vypsat všechny četnosti a poté je vypsat jejich pořadí  
-    with open(soubor, "w", encoding="utf-8") as f:
+    with open(opakovane_funkce.hledani_cesty(soubor), "w", encoding="utf-8") as f:
         f.write("*s jakou četností se liší slova s rozdílem jednoho písmena\n")
         f.write("*tabulka četností sestupně \n")
         sortovano = sorted(seznam.items(), key=lambda x: x[1], reverse=True)
@@ -42,10 +42,16 @@ def pomery(celkove, h, bez_h, vzdalene, vubec, dohromady, soubor, vypisy):
             f.write("*\n")
             f.write(f"*{vypisy[k]}\n")
             if k == "h" or k == "bez_h":
-                f.write(f"*otec\tsyn\n")
+                f.write(f"*hrana\totec\tsyn\n")
+            else:
+                f.write(f"*chybí hrana\tslovo\tslovo\n")
             seznamik = dohromady[k]
-            for i in sorted(seznamik, key=lambda x: x[0]):
-                f.write(f"{i[0]}\t{i[1]}\n")
+            if k == "h" or k == "bez_h":
+                for i in sorted(seznamik, key=lambda x: x[0]):
+                    f.write(f"hrana\t{i[0]}\t{i[1]}\n")
+            else:
+                for i in sorted(seznamik, key=lambda x: x[0]):
+                    f.write(f"chybí hrana\t{i[0]}\t{i[1]}\n")
 
 def analyzuj_vztahy(lexicon, all_lemmas, generator_kandidatu, soubor, vypisy):
     celkove = 0
@@ -59,7 +65,7 @@ def analyzuj_vztahy(lexicon, all_lemmas, generator_kandidatu, soubor, vypisy):
             if novotvary != []:
                 for k in novotvary:
                     if k in all_lemmas:
-                        stav = jsou_pribuzni(k, lexeme.lemma, lexicon)
+                        stav = jsou_pribuzny(k, lexeme.lemma, lexicon)
                         celkove += 1
 
                         #je to vždycky (rodič, syn)
