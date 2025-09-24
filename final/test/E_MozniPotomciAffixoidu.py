@@ -64,7 +64,7 @@ def main(lexicon):
 
             if deticky == [] :
                 aff = lexeme.lemma[1:-1]
-                nalezeni = deti(deticky,aff)
+                nalezeni = deti(deticky,aff, all_lemmas, lexicon)
             
             elif len(deticky) == 1:
                 aff = lexeme.lemma[1:-1]
