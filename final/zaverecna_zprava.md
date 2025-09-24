@@ -1,14 +1,14 @@
 
-#### <center>Závěrečná zpráva o ročníkovém projektu</center>
-##### <center>Aneta Řeháková</center>
+## <center>Závěrečná zpráva o ročníkovém projektu</center>
+### <center>Aneta Řeháková</center>
 
-##### Popis a zaměření
+### Popis a zaměření
 
 *DeriNet* je lexikální síť modelující slovotvorné vztahy mezi slovy z českého jazyka. Základní jednotkou této sítě je lexém, jenž obsahuje informace o jednotlivých slovech. V tuto chvíli se v aktuální verzi databáze *DeriNet 2.3*, již jsem sama používala, nachází přes 1 milion lexémů.
 
 Kvůli takové rozsáhlosti sítě není možné vztahy mezi jednotlivými slovy zadávat a kontrolovat ručně, a tak některé vztahy chybí, nebo naopak přebývají. Mým úkolem bylo sepsat sadu testů, které tyto chyby odhalí a, pokud to bude možné, najdou i možná řešení.
 
-##### Použité technologie
+### Použité technologie
 
 - Samotná databáze DeriNet 2.3
   - Získána z této webové stránky: <https://lindat.mff.cuni.cz/repository/items/62540779-b206-4cf7-ac33-399ce68e35e6>
@@ -42,7 +42,13 @@ Do druhé kategorie patří tyto data
 
 Ve svých testech využívám hlavně *parent, feats, misc, pos a lemma*.
 
-##### Testy
+### Testy
+
+*Spouštění testů*
+
+Pro tento účel se ve složce *final* nachází soubor *Makefile*, který po spuštění stáhne všechny potřebné závislosti, poté spustí generování výstupních souborů a nakonec vytvoří grafové statistiky. 
+
+Pro to, aby člověk mohl využít souboru *Makefile*, potřebuje být schopen na příkazové řádce ve složce *final* spustit *make all*. 
 
 *Název testů*
 
@@ -79,7 +85,7 @@ Ne všechny testy odhalují chyby na stejné úrovni vážnosti, a proto jsem ro
 
 Určená skupina pro daný test se nachází na prvním místě názvu daného testu.
 
-##### Statistiky
+### Statistiky
 
 *Úspěšnost nalezení možného řešení pro jeden typ testů*
 
