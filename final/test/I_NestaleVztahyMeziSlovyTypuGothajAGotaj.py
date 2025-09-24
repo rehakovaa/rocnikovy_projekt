@@ -8,16 +8,7 @@ podle jejich navázanosti se to dělí do čtyř kategorií
 ve výstupu je nejdříve tabulka procentuální rozdělení těchto kategorií a poté jsou tyto kategorie seřazeny od nejčastější po nejméně častou
 """
 
-import derinet.lexicon as dlex
-import os
 import porovnani
-
-lexicon = dlex.Lexicon()
-current_dir = os.getcwd()  # aktualni adresar
-file_path = os.path.join(current_dir, "./derinet-2-3.tsv")  #sestaveni cesty
-lexicon.load(file_path)
-
-all_lemmas = {lex.lemma for lex in lexicon.iter_lexemes()}
 
 def bez_h(lemma):
     indexiky = []
@@ -30,11 +21,12 @@ def bez_h(lemma):
         novotvary.append(lemma[:j] + lemma[j+1:])
     return novotvary
 
+def main(lexicon):       
+    all_lemmas = {lex.lemma for lex in lexicon.iter_lexemes()}
+    vypisky = {"h" : "rodičem v tomto vztahu je slovo obsahující 'h' navíc",
+                "bez_h":"rodičem v tom vztahu je slovo neobsahující zkoumané 'h'", 
+                "vubec": "tato dvojice slov není nijak příbuzná", 
+                "vzdalene": "tato dvojice slov je příbuzná, ale ne napřímo"}
 
-vypisky = {"h" : "rodičem v tomto vztahu je slovo obsahující 'h' navíc",
-            "bez_h":"rodičem v tom vztahu je slovo neobsahující zkoumané 'h'", 
-            "vubec": "tato dvojice slov není nijak příbuzná", 
-            "vzdalene": "tato dvojice slov je příbuzná, ale ne napřímo"}
-
-porovnani.analyzuj_vztahy(lexicon, all_lemmas, bez_h,
-                "I_NestaleVztahyMeziSlovyTypuGothajAGotaj.tsv", vypisky)
+    porovnani.analyzuj_vztahy(lexicon, all_lemmas, bez_h,
+                    "I_NestaleVztahyMeziSlovyTypuGothajAGotaj.tsv", vypisky)
