@@ -1,0 +1,133 @@
+*osamocená slovesa končící na 'řit' (běžkařit)
+*tři skupiny: nalezený rodič, který je častější než nalezené slovo, nalezený rodič, který je méně častý než nalezené slovo, nenalezen rodič
+*chybí hrana	zkoumané slovo	nalezené slovo
+*
+*častější předek
+chybí hrana	bukařit	bukař
+chybí hrana	běžkařit	běžkař
+chybí hrana	chmelařit	chmelař
+chybí hrana	cvokařit	cvokař
+chybí hrana	dovolenkařit	dovolenka
+chybí hrana	drožkařit	drožkař
+chybí hrana	dřevařit	dřevař
+chybí hrana	filmařit	filmař
+chybí hrana	holkařit	holkař
+chybí hrana	intrikařit	intrika
+chybí hrana	kaktusařit	kaktus
+chybí hrana	kantořit	kant
+chybí hrana	klepařit	klepař
+chybí hrana	kořit	oř
+chybí hrana	linkařit	linkař
+chybí hrana	mazuřit	zuřit
+chybí hrana	nasejřit	sejřit
+chybí hrana	partičkařit	partička
+chybí hrana	pekařit	pekař
+chybí hrana	pestřit	pes
+chybí hrana	pitvořit	tvořit
+chybí hrana	plachtařit	plachtař
+chybí hrana	písničkařit	písnička
+chybí hrana	rodinkařit	rodinka
+chybí hrana	sadařit	sadař
+chybí hrana	samotařit	samota
+chybí hrana	skalkařit	skalkař
+chybí hrana	souměřit	uměřit
+chybí hrana	spolkařit	spolkař
+chybí hrana	stánkařit	stánkař
+chybí hrana	topořit	po
+chybí hrana	trafikařit	trafika
+chybí hrana	tvářit	tvář
+chybí hrana	ukostřit	ostřit
+chybí hrana	vatřit	vat
+chybí hrana	vorařit	vorař
+chybí hrana	vpeřit	eř
+chybí hrana	vtipkařit	vtipkař
+chybí hrana	vypartykařit	partyka
+chybí hrana	vědařit	vědař
+chybí hrana	zapartykařit	partyka
+chybí hrana	zazvěřit	zvěř
+chybí hrana	zbodřit	od
+chybí hrana	zcukřit	cuk
+chybí hrana	zjařit	jař
+chybí hrana	zkýčařit	kýčař
+chybí hrana	zludařit	udařit
+chybí hrana	zounořit	unořit
+chybí hrana	zpartykařit	partyka
+chybí hrana	zpeřit	eř
+chybí hrana	zpuchýřit	puchýř
+chybí hrana	zčepýřit	čepýřit
+chybí hrana	úhořit	úhoř
+chybí hrana	úvodníkařit	úvodník
+chybí hrana	řepařit	řepař
+chybí hrana	řezbařit	řezba
+chybí hrana	šipkařit	šipkař
+chybí hrana	školařit	škola
+chybí hrana	školkařit	školkař
+chybí hrana	škvařit	vařit
+chybí hrana	škvířit	vířit
+chybí hrana	šprýmařit	šprýmař
+chybí hrana	štěpařit	štěpař
+chybí hrana	švejkařit	švejk
+chybí hrana	šňořit	oř
+chybí hrana	živořit	živo
+*
+*méně častý předek
+chybí hrana	bořit	oř
+chybí hrana	nořit	oř
+chybí hrana	okařit	ok
+chybí hrana	patřit	pat
+chybí hrana	rozjařit	zjařit
+chybí hrana	tvořit	oř
+chybí hrana	udeřit	eř
+chybí hrana	zduřit	u
+chybí hrana	zuřit	u
+chybí hrana	čeřit	eř
+chybí hrana	čuřit	u
+chybí hrana	šmírařit	šmírař
+chybí hrana	ždářit	á
+*
+*nenalezen předek
+chybí hrana	bafuňařit
+chybí hrana	batůžkařit
+chybí hrana	haštěřit
+chybí hrana	jitřit
+chybí hrana	maškařit
+chybí hrana	měřit
+chybí hrana	podpořit
+chybí hrana	požitkařit
+chybí hrana	přebobřit
+chybí hrana	přepeřit
+chybí hrana	přezvěřit
+chybí hrana	přicukřit
+chybí hrana	přihmouřit
+chybí hrana	sebenešetřit
+chybí hrana	sebevyjádřit
+chybí hrana	semenařit
+chybí hrana	sešvakřit
+chybí hrana	spolutvořit
+chybí hrana	spoluvytvořit
+chybí hrana	vichřit
+chybí hrana	vydýřit
+chybí hrana	vyfařit
+chybí hrana	vypeřit
+chybí hrana	vyskeřit
+chybí hrana	zafajřit
+chybí hrana	zahmouřit
+chybí hrana	zakrákořit
+chybí hrana	zanešvařit
+chybí hrana	zapeřit
+chybí hrana	zatejnořit
+chybí hrana	začimčařit
+chybí hrana	zbujařit
+chybí hrana	zchachařit
+chybí hrana	zhůvěřit
+chybí hrana	zludrařit
+chybí hrana	zmátořit
+chybí hrana	znedůvěřit
+chybí hrana	znešvařit
+chybí hrana	zpříkřit
+chybí hrana	zrejtařit
+chybí hrana	zňátřit
+chybí hrana	čemejřit
+chybí hrana	štířit
+chybí hrana	žudlařit
+chybí hrana	žířit

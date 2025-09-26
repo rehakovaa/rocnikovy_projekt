@@ -1,0 +1,826 @@
+*opuštěná slova končící na 'čko' nebo 'ček'
+*dvě skupiny: nalezený rodič a nenalezený rodič
+*chybí hrana	zkoumané slovo	nalezené slovo
+*
+*nalezen předek
+chybí hrana	adresáříček	adresář
+chybí hrana	alkoholíček	alkohol
+chybí hrana	anduláček	andulák
+chybí hrana	auditeček	audit
+chybí hrana	bagříček	bagřík
+chybí hrana	bahníčko	bahník
+chybí hrana	bahňáček	bahňák
+chybí hrana	baleťáček	baleťák
+chybí hrana	bareček	bar
+chybí hrana	basáček	bas
+chybí hrana	bavlníček	bavlník
+chybí hrana	baňáček	baňa
+chybí hrana	bejváníčko	bejvání
+chybí hrana	bejváček	bejvák
+chybí hrana	beláček	bel
+chybí hrana	bezpečíčko	bezpečí
+chybí hrana	biosáček	bios
+chybí hrana	biošpekáček	biošpek
+chybí hrana	blafáček	blaf
+chybí hrana	blešáček	blešák
+chybí hrana	blešáček	blešák
+chybí hrana	blázníček	blázen
+chybí hrana	bodlináček	bodlináč
+chybí hrana	bodyček	bod
+chybí hrana	bodíčko	bod
+chybí hrana	bombarďáček	bombarďák
+chybí hrana	bombarďáček	bombarďák
+chybí hrana	bonusíček	bonus
+chybí hrana	borovíčko	boroví
+chybí hrana	botníček	botník
+chybí hrana	bouráček	bourák
+chybí hrana	bramboříček	brambořík
+chybí hrana	bravíčko	brav
+chybí hrana	brusleníčko	bruslení
+chybí hrana	brzlíček	brzlík
+chybí hrana	bucláček	buclák
+chybí hrana	budníček	budník
+chybí hrana	budníček	budník
+chybí hrana	buřtíček	buřt
+chybí hrana	buřtíček	buřt
+chybí hrana	bádáníčko	bádání
+chybí hrana	báleček	bál
+chybí hrana	báčko	bák
+chybí hrana	běháníčko	běhání
+chybí hrana	cachtáníčko	cachtání
+chybí hrana	celeráček	celer
+chybí hrana	centimetříček	centimetřík
+chybí hrana	cenťáček	cenťák
+chybí hrana	chechtáček	checht
+chybí hrana	chlebníček	chlebník
+chybí hrana	chlumeček	chlum
+chybí hrana	chlupáček	chlup
+chybí hrana	chmelíček	chmel
+chybí hrana	chrapláček	chraplák
+chybí hrana	chrchláček	chrchlák
+chybí hrana	chrámeček	chrám
+chybí hrana	chrásteček	chrást
+chybí hrana	chumlíček	chuml
+chybí hrana	chytáček	chyt
+chybí hrana	chřestovníček	chřestovna
+chybí hrana	cimbuříčko	cimbuří
+chybí hrana	cizáček	cizák
+chybí hrana	copeček	cop
+chybí hrana	couráček	courák
+chybí hrana	cvičeníčko	cvičení
+chybí hrana	cvičáček	cvičák
+chybí hrana	datumíčko	datum
+chybí hrana	debilníček	debilní
+chybí hrana	demíčko	demo
+chybí hrana	desetikolečko	desetikolek
+chybí hrana	desátníček	desátník
+chybí hrana	detailíček	detail
+chybí hrana	diblíček	diblík
+chybí hrana	dieseláček	diesel
+chybí hrana	diplomíček	diplom
+chybí hrana	divadlíčko	divadlo
+chybí hrana	divočáček	divočák
+chybí hrana	dobyteček	dobytek
+chybí hrana	dodateček	dodat
+chybí hrana	dojáček	doják
+chybí hrana	dojímáníčko	dojímání
+chybí hrana	dopraváček	dopravák
+chybí hrana	dospěláček	dospělák
+chybí hrana	dostavníček	dostavník
+chybí hrana	drahokamíček	drahokam
+chybí hrana	dramaťáček	dramaťák
+chybí hrana	drobeček	drob
+chybí hrana	drobníček	drobno
+chybí hrana	drozdíček	drozdí
+chybí hrana	drsňáček	drsňák
+chybí hrana	dráteníček	dráteník
+chybí hrana	drážděníčko	dráždění
+chybí hrana	dupáček	dupák
+chybí hrana	dvouplošníček	dvouplošník
+chybí hrana	dýňáček	dýňák
+chybí hrana	důkazíček	důkaz
+chybí hrana	důvěrníček	důvěrník
+chybí hrana	džbereček	džber
+chybí hrana	džemíček	džem
+chybí hrana	džípeček	džíp
+chybí hrana	eseročko	eser
+chybí hrana	eskáčko	eska
+chybí hrana	exnováček	exnova
+chybí hrana	faktíček	fakt
+chybí hrana	faulíček	faul
+chybí hrana	fesťáček	fesťák
+chybí hrana	feťáček	feťák
+chybí hrana	filmíček	film
+chybí hrana	fiáteček	fiátek
+chybí hrana	flákáníčko	flákání
+chybí hrana	flámeček	flám
+chybí hrana	fordíček	ford
+chybí hrana	fotbáleček	fotbál
+chybí hrana	fořtíček	fořt
+chybí hrana	frček	frk
+chybí hrana	funebráček	funebrák
+chybí hrana	fusáček	fuse
+chybí hrana	fáčko	fáč
+chybí hrana	fíkovníček	fíkovník
+chybí hrana	fóreček	fór
+chybí hrana	gelíček	gel
+chybí hrana	gestapáček	gestapák
+chybí hrana	gestíčko	gesto
+chybí hrana	goriláček	gorila
+chybí hrana	grilováníčko	grilování
+chybí hrana	grošíček	groš
+chybí hrana	gruziňáček	gruziňák
+chybí hrana	géčko	gé
+chybí hrana	góleček	gól
+chybí hrana	gólíček	gól
+chybí hrana	hadráček	hadr
+chybí hrana	hafáček	hafo
+chybí hrana	hajzlíček	hajzl
+chybí hrana	hajáníčko	hajání
+chybí hrana	harašeníčko	harašení
+chybí hrana	hladíček	hlad
+chybí hrana	hlazeníčko	hlazení
+chybí hrana	hlteček	hlt
+chybí hrana	hlášeníčko	hlášení
+chybí hrana	hoblíček	hobl
+chybí hrana	hokejíček	hokej
+chybí hrana	horníček	horní
+chybí hrana	hospodáříček	hospodář
+chybí hrana	houfeček	houf
+chybí hrana	houpáníčko	houpání
+chybí hrana	houseníček	housenka
+chybí hrana	hradličko	hradlo
+chybí hrana	hraníčko	hraní
+chybí hrana	huberťáček	huberťák
+chybí hrana	hudebníček	hudební
+chybí hrana	huleníčko	hulení
+chybí hrana	hvozdíček	hvozd
+chybí hrana	hvízdáníčko	hvízdání
+chybí hrana	hysteráček	hysterka
+chybí hrana	hádáníčko	hádání
+chybí hrana	hádéčko	hádka
+chybí hrana	hájíček	háj
+chybí hrana	háčko	há
+chybí hrana	hříšníček	hříšník
+chybí hrana	ingotíček	ingot
+chybí hrana	jahelníček	jahelník
+chybí hrana	jednopokojáček	jednopokoják
+chybí hrana	jezevčíček	jezevčí
+chybí hrana	jezírečko	jezírko
+chybí hrana	jogurtíček	jogurt
+chybí hrana	jorkšíráček	jorkšír
+chybí hrana	kajáček	kajka
+chybí hrana	kameňáček	kameňák
+chybí hrana	kapáneček	kapánek
+chybí hrana	kašlíček	kašlík
+chybí hrana	kaštáneček	kaštánek
+chybí hrana	keksíček	keks
+chybí hrana	kelímeček	kelímek
+chybí hrana	kilečko	kilo
+chybí hrana	kiláček	kilák
+chybí hrana	kinečko	kino
+chybí hrana	klebetníček	klebetník
+chybí hrana	klinkáček	klinik
+chybí hrana	klusáníčko	klusání
+chybí hrana	kocháníčko	kochání
+chybí hrana	kolejáček	kolej
+chybí hrana	koncertíček	koncert
+chybí hrana	korbáček	korba
+chybí hrana	kosateček	kosatka
+chybí hrana	kostýmeček	kostým
+chybí hrana	koumáček	koumák
+chybí hrana	koupáníčko	koupání
+chybí hrana	kouseček	kousek
+chybí hrana	kousíneček	kousínek
+chybí hrana	koutníček	koutní
+chybí hrana	kovbojíček	kovboj
+chybí hrana	kozlíček	kozlí
+chybí hrana	kozáček	kozák
+chybí hrana	krejzlíček	krejzl
+chybí hrana	kriplíček	kripl
+chybí hrana	krmeníčko	krmení
+chybí hrana	kroječek	kroj
+chybí hrana	krosček	kros
+chybí hrana	kruháček	kruh
+chybí hrana	krémíček	krém
+chybí hrana	kulturáček	kulturák
+chybí hrana	kultíček	kult
+chybí hrana	kupéčko	kupé
+chybí hrana	kupíčko	kup
+chybí hrana	kvítečko	kvítek
+chybí hrana	kvítíčko	kvítí
+chybí hrana	kápéčko	kápo
+chybí hrana	kátéčko	kát
+chybí hrana	káčko	ká
+chybí hrana	křeslíčko	křeslo
+chybí hrana	křeček	křeč
+chybí hrana	křižníček	křižník
+chybí hrana	kříženeček	kříženka
+chybí hrana	labuťáček	labuť
+chybí hrana	lahváček	lahváč
+chybí hrana	lajblíček	lajblík
+chybí hrana	laníčko	laní
+chybí hrana	latéčko	lata
+chybí hrana	lechtáníčko	lechtání
+chybí hrana	lejníčko	lejno
+chybí hrana	lesňáček	lesoň
+chybí hrana	letadlíčko	letadlo
+chybí hrana	leváček	lev
+chybí hrana	libeček	libo
+chybí hrana	likérníček	likérník
+chybí hrana	litříček	litřík
+chybí hrana	lomcováček	lomcovák
+chybí hrana	lomeček	lom
+chybí hrana	lordíček	lord
+chybí hrana	losováníčko	losování
+chybí hrana	loupeníčko	loupení
+chybí hrana	luštěníčko	luštění
+chybí hrana	lysáček	lyse
+chybí hrana	lyžáček	lyžák
+chybí hrana	lázeňáček	lázeň
+chybí hrana	létečko	léta
+chybí hrana	létéčko	léta
+chybí hrana	lítečko	lít
+chybí hrana	madlíčko	madlo
+chybí hrana	mazáníčko	mazání
+chybí hrana	medovníček	medovník
+chybí hrana	metráček	metr
+chybí hrana	milovníček	milovník
+chybí hrana	miminečko	mimino
+chybí hrana	mindráček	mindrák
+chybí hrana	mistříček	mistřík
+chybí hrana	mlsáníčko	mlsání
+chybí hrana	mlýneček	mlýn
+chybí hrana	modroočko	modro
+chybí hrana	mopslíček	mopsl
+chybí hrana	moureček	mour
+chybí hrana	moříčko	moře
+chybí hrana	mrazáček	mrazák
+chybí hrana	mraček	mrak
+chybí hrana	mučedníček	mučedník
+chybí hrana	máječek	máje
+chybí hrana	májíček	máj
+chybí hrana	máček	mák
+chybí hrana	mýdelníček	mýdelník
+chybí hrana	nachlazeníčko	nachlazení
+chybí hrana	naděleníčko	nadělení
+chybí hrana	nafťáček	nafťák
+chybí hrana	nakladatelstvíčko	nakladatelství
+chybí hrana	namlouváníčko	namlouvání
+chybí hrana	narkosáček	narkosa
+chybí hrana	narozeníčko	narození
+chybí hrana	nazouváček	nazouvák
+chybí hrana	nedopatřeníčko	nedopatření
+chybí hrana	nedoplateček	nedoplatek
+chybí hrana	nešťastníček	nešťastník
+chybí hrana	nikláček	nikl
+chybí hrana	ničeníčko	ničení
+chybí hrana	nocležníček	nocležník
+chybí hrana	nuláček	nulák
+chybí hrana	nábojíček	náboj
+chybí hrana	náhubeček	náhubek
+chybí hrana	nájmíček	nájem
+chybí hrana	nápadníček	nápadník
+chybí hrana	nárazníček	nárazník
+chybí hrana	nároďáček	nároďák
+chybí hrana	následníček	následník
+chybí hrana	návštěvníček	návštěvní
+chybí hrana	náčiníčko	náčiní
+chybí hrana	náčrtníček	náčrtník
+chybí hrana	nýtovníček	nýtovník
+chybí hrana	obalíček	obal
+chybí hrana	oblečeníčko	oblečení
+chybí hrana	obrubníček	obrubník
+chybí hrana	obviněníčko	obvinění
+chybí hrana	obytňáček	obytňák
+chybí hrana	občasníček	občasník
+chybí hrana	občerstveníčko	občerstvení
+chybí hrana	ochotníček	ochotník
+chybí hrana	ochuceníčko	ochucení
+chybí hrana	odstíneček	odstín
+chybí hrana	oholeníčko	oholení
+chybí hrana	opalováníčko	opalování
+chybí hrana	orchestříček	orchestřík
+chybí hrana	osaháníčko	osahání
+chybí hrana	osmikolečko	osmikole
+chybí hrana	ostruháček	ostruha
+chybí hrana	osvědčeníčko	osvědčení
+chybí hrana	osvěženíčko	osvěžení
+chybí hrana	ovocíčko	ovoce
+chybí hrana	oznámeníčko	oznámení
+chybí hrana	oživeníčko	oživení
+chybí hrana	pacholíček	pacholík
+chybí hrana	pacholíček	pacholík
+chybí hrana	pajzlíček	pajzl
+chybí hrana	pamětníček	pamětní
+chybí hrana	panďuláček	panďulák
+chybí hrana	papežíček	papež
+chybí hrana	papíreček	papír
+chybí hrana	patáček	pat
+chybí hrana	patříčko	patař
+chybí hrana	pařníček	pařník
+chybí hrana	pašeráček	pašerák
+chybí hrana	pekelníček	pekelník
+chybí hrana	pendreček	pendrek
+chybí hrana	penízeček	peníze
+chybí hrana	petrklíček	petrklíč
+chybí hrana	pečeníčko	pečení
+chybí hrana	pidiautíčko	pidiauto
+chybí hrana	pidibaráček	pidibarák
+chybí hrana	pidibyteček	pidibyt
+chybí hrana	pidiměstečko	pidiměsto
+chybí hrana	pidisáleček	pidisálek
+chybí hrana	pijáček	piják
+chybí hrana	pikolíček	pikolík
+chybí hrana	placáček	plac
+chybí hrana	plameňáček	plameňák
+chybí hrana	plaváníčko	plavání
+chybí hrana	ploužáček	ploužák
+chybí hrana	plukovníček	plukovní
+chybí hrana	pláceček	plácek
+chybí hrana	pláneček	plán
+chybí hrana	pobaveníčko	pobavení
+chybí hrana	pochoďáček	pochoďák
+chybí hrana	podběráček	podběrák
+chybí hrana	poddubáček	poddubák
+chybí hrana	podhlavníček	podhlavník
+chybí hrana	podkrovíčko	podkroví
+chybí hrana	podnikatelíček	podnikatel
+chybí hrana	podnikáníčko	podnikání
+chybí hrana	podojeníčko	podojení
+chybí hrana	podprdelníček	podprdelník
+chybí hrana	podáníčko	podání
+chybí hrana	podíleček	podíl
+chybí hrana	podíváníčko	podívání
+chybí hrana	podýcháníčko	podýchání
+chybí hrana	poděkováníčko	poděkování
+chybí hrana	pohoupáníčko	pohoupání
+chybí hrana	pohověníčko	pohovění
+chybí hrana	poháreček	pohár
+chybí hrana	poježděníčko	poježdění
+chybí hrana	pojištěníčko	pojištění
+chybí hrana	pokecáníčko	pokecání
+chybí hrana	poklůpeček	poklůpek
+chybí hrana	pokoukáníčko	pokoukání
+chybí hrana	pokoupáníčko	pokoupání
+chybí hrana	pokušeníčko	pokušení
+chybí hrana	pokáníčko	pokání
+chybí hrana	polétáníčko	polétání
+chybí hrana	poníženíčko	ponížení
+chybí hrana	poplatníček	poplatník
+chybí hrana	popovídáníčko	popovídání
+chybí hrana	popěveček	popěvek
+chybí hrana	porníčko	porno
+chybí hrana	porušeníčko	porušení
+chybí hrana	posloucháníčko	poslouchání
+chybí hrana	pospáníčko	pospání
+chybí hrana	posvíceníčko	posvícení
+chybí hrana	potomeček	potom
+chybí hrana	potrsáníčko	potrsání
+chybí hrana	potvrzeníčko	potvrzení
+chybí hrana	potěšeníčko	potěšení
+chybí hrana	poučeníčko	poučení
+chybí hrana	pouťáček	pouť
+chybí hrana	povalováníčko	povalování
+chybí hrana	povozeníčko	povození
+chybí hrana	povyraženíčko	povyražení
+chybí hrana	povzbuzeníčko	povzbuzení
+chybí hrana	pováleníčko	poválení
+chybí hrana	povídáníčko	povídání
+chybí hrana	pozadíčko	pozadí
+chybí hrana	pozdviženíčko	pozdvižení
+chybí hrana	počítáníčko	počítání
+chybí hrana	pořádníček	pořádník
+chybí hrana	pošimráníčko	pošimrání
+chybí hrana	poštěváček	poštěvák
+chybí hrana	pracovníček	pracovní
+chybí hrana	prasátečko	prasátko
+chybí hrana	prděníčko	prdění
+chybí hrana	presíčko	pres
+chybí hrana	prodleníčko	prodlení
+chybí hrana	propadáček	propad
+chybí hrana	proseníčko	prosení
+chybí hrana	prostěradlíčko	prostěradlo
+chybí hrana	proužeček	proužek
+chybí hrana	provázeček	provázek
+chybí hrana	prsíčko	prs
+chybí hrana	prsťáček	prsť
+chybí hrana	prváček	prvák
+chybí hrana	pryskyřníček	pryskyřník
+chybí hrana	prádelníček	prádelní
+chybí hrana	právníček	právní
+chybí hrana	prášeček	prášek
+chybí hrana	průjmíček	průjem
+chybí hrana	ptáček	pták
+chybí hrana	puclíček	puclík
+chybí hrana	pupkáček	pupkáč
+chybí hrana	pupíneček	pupínek
+chybí hrana	pápěříčko	pápěří
+chybí hrana	pécéčko	péci
+chybí hrana	pětikolečko	pětikolo
+chybí hrana	pětníček	pětník
+chybí hrana	přebyteček	přebytek
+chybí hrana	předeček	před
+chybí hrana	předsevzetíčko	předsevzetí
+chybí hrana	představeníčko	představení
+chybí hrana	přespoláček	přespolák
+chybí hrana	přetaktováníčko	přetaktování
+chybí hrana	převleček	převlek
+chybí hrana	přihoříváníčko	přihořívání
+chybí hrana	přilepšeníčko	přilepšení
+chybí hrana	příborníček	příborník
+chybí hrana	příkladeček	příklad
+chybí hrana	případíček	případ
+chybí hrana	příplateček	příplatek
+chybí hrana	příspěveček	příspěvek
+chybí hrana	přístrojíček	přístroj
+chybí hrana	příživníček	příživník
+chybí hrana	pšeníčko	pšenka
+chybí hrana	rakytníček	rakytník
+chybí hrana	ramínečko	ramínko
+chybí hrana	razítečko	razítko
+chybí hrana	raťafáček	raťafák
+chybí hrana	reparáteček	reparát
+chybí hrana	rojeníčko	rojení
+chybí hrana	rojáček	roj
+chybí hrana	rolníček	rolní
+chybí hrana	rozcestníček	rozcestní
+chybí hrana	rozchodníček	rozchodník
+chybí hrana	rumeček	rum
+chybí hrana	rumíček	rum
+chybí hrana	rváček	rváč
+chybí hrana	rychlíček	rychlík
+chybí hrana	ráječek	ráj
+chybí hrana	růžeček	růže
+chybí hrana	sazebníček	sazební
+chybí hrana	sbíráníčko	sbírání
+chybí hrana	sdruženíčko	sdružení
+chybí hrana	sedlíčko	sedlo
+chybí hrana	seníček	sen
+chybí hrana	setkáníčko	setkání
+chybí hrana	sevřeníčko	sevření
+chybí hrana	skanzeneček	skanzen
+chybí hrana	skicáček	skicák
+chybí hrana	sklepéček	sklep
+chybí hrana	sklípeček	sklípek
+chybí hrana	skáčko	ska
+chybí hrana	skřeček	skřek
+chybí hrana	skříteček	skřítek
+chybí hrana	slamníček	slamník
+chybí hrana	sloneček	slon
+chybí hrana	slunečníček	sluneční
+chybí hrana	slušňáček	slušňák
+chybí hrana	smaragdíček	smaragd
+chybí hrana	smažáček	smažák
+chybí hrana	smoteček	smotek
+chybí hrana	smrádeček	smrádek
+chybí hrana	smrťáček	smrťák
+chybí hrana	smítečko	smítko
+chybí hrana	smíšeček	smíšek
+chybí hrana	snoubeneček	snoubenka
+chybí hrana	souboreček	soubor
+chybí hrana	soukromíčko	soukromí
+chybí hrana	sousedeček	soused
+chybí hrana	spláceníčko	splácení
+chybí hrana	spláveček	splávek
+chybí hrana	spořeníčko	spoření
+chybí hrana	sprosťáček	sprosťák
+chybí hrana	stehlíček	stehlík
+chybí hrana	stmíváníčko	stmívání
+chybí hrana	stojáneček	stojánek
+chybí hrana	stoupáníčko	stoupání
+chybí hrana	strpeníčko	strpení
+chybí hrana	stupíneček	stupínek
+chybí hrana	stáneček	stánek
+chybí hrana	stíneček	stín
+chybí hrana	stěhováček	stěhovák
+chybí hrana	suchoučko	sucho
+chybí hrana	svaleček	sval
+chybí hrana	svalíček	sval
+chybí hrana	svezeníčko	svezení
+chybí hrana	sviteček	svit
+chybí hrana	sváteček	svát
+chybí hrana	svědectvíčko	svědectví
+chybí hrana	svědomíčko	svědomí
+chybí hrana	světlíček	světlík
+chybí hrana	sádeček	sádka
+chybí hrana	sádlíčko	sádlo
+chybí hrana	taháček	tah
+chybí hrana	tajtrlíček	tajtrlík
+chybí hrana	talentíček	talent
+chybí hrana	talířeček	talíř
+chybí hrana	tatíneček	tatínek
+chybí hrana	tenisáček	tenis
+chybí hrana	teroristíček	terorista
+chybí hrana	teréňáček	teréňák
+chybí hrana	tlacháníčko	tlachání
+chybí hrana	tlemeníčko	tlemení
+chybí hrana	topeníčko	topení
+chybí hrana	totáček	totáč
+chybí hrana	toustíček	toust
+chybí hrana	touženíčko	toužení
+chybí hrana	traumíčko	trauma
+chybí hrana	trestňáček	trestňák
+chybí hrana	trojkolečko	trojkolo
+chybí hrana	trpajzlíček	trpajzlík
+chybí hrana	trumfeček	trumf
+chybí hrana	trápeníčko	trápení
+chybí hrana	tuleníčko	tulení
+chybí hrana	tupláček	tuplák
+chybí hrana	tuzemáček	tuzemák
+chybí hrana	tučňáček	tučňák
+chybí hrana	tvořeníčko	tvoření
+chybí hrana	tyraneček	tyran
+chybí hrana	táceček	tác
+chybí hrana	tílečko	tílko
+chybí hrana	tóneček	tón
+chybí hrana	týmeček	tým
+chybí hrana	týčko	týk
+chybí hrana	těšeníčko	těšení
+chybí hrana	tříkolečko	tříkole
+chybí hrana	udáníčko	udání
+chybí hrana	uskupeníčko	uskupení
+chybí hrana	uspokojeníčko	uspokojení
+chybí hrana	utrpeníčko	utrpení
+chybí hrana	ušáček	ušák
+chybí hrana	vazeček	vaz
+chybí hrana	vařeníčko	vaření
+chybí hrana	vedlejšáček	vedlejšák
+chybí hrana	vesmíreček	vesmír
+chybí hrana	večerníček	večerní
+chybí hrana	vláčíček	vláče
+chybí hrana	volníčko	volní
+chybí hrana	voláneček	volán
+chybí hrana	voživeníčko	voživení
+chybí hrana	vrkoček	vrkoč
+chybí hrana	vrtáček	vrt
+chybí hrana	vstaváček	vstavka
+chybí hrana	vuklíček	vukle
+chybí hrana	vybaveníčko	vybavení
+chybí hrana	vybydleníčko	vybydlení
+chybí hrana	vydíráníčko	vydírání
+chybí hrana	vylepšeníčko	vylepšení
+chybí hrana	vyloučeníčko	vyloučení
+chybí hrana	vyprávěníčko	vyprávění
+chybí hrana	vystoupeníčko	vystoupení
+chybí hrana	vzdycháček	vzdych
+chybí hrana	vzpomínáček	vzpomínka
+chybí hrana	véčko	vé
+chybí hrana	výhledeček	výhled
+chybí hrana	výjevíček	výjev
+chybí hrana	výletíček	výlet
+chybí hrana	výreček	výr
+chybí hrana	výstaveček	výstav
+chybí hrana	všiváček	všivák
+chybí hrana	zabijáček	zabiják
+chybí hrana	zahradníček	zahradní
+chybí hrana	zajček	za
+chybí hrana	zakrslíček	zakrslík
+chybí hrana	zamyšleníčko	zamyšlení
+chybí hrana	zaměstnáníčko	zaměstnání
+chybí hrana	zaďáček	zaďák
+chybí hrana	zařízeníčko	zařízení
+chybí hrana	zbytkáček	zbytkák
+chybí hrana	zdobeníčko	zdobení
+chybí hrana	zdrojíček	zdroj
+chybí hrana	zděšeníčko	zděšení
+chybí hrana	zdřímnutíčko	zdřímnutí
+chybí hrana	zefýreček	zefýr
+chybí hrana	zelenoočko	zeleno
+chybí hrana	zetíček	zet
+chybí hrana	zipeček	zip
+chybí hrana	zjištěníčko	zjištění
+chybí hrana	zklamáníčko	zklamání
+chybí hrana	zkoušeníčko	zkoušení
+chybí hrana	zlatníček	zlatník
+chybí hrana	zlobeníčko	zlobení
+chybí hrana	zmilelíček	zmilele
+chybí hrana	znamínečko	znamínko
+chybí hrana	zobáníčko	zobání
+chybí hrana	zoftíček	zoft
+chybí hrana	zpožděníčko	zpoždění
+chybí hrana	zpíváníčko	zpívání
+chybí hrana	zraněníčko	zranění
+chybí hrana	zrcátečko	zrcátko
+chybí hrana	zvoneček	zvon
+chybí hrana	zádrhelíček	zádrhel
+chybí hrana	zájezdeček	zájezd
+chybí hrana	záměreček	záměr
+chybí hrana	zápaleček	zápal
+chybí hrana	zápěstíčko	zápěstí
+chybí hrana	zároháček	zárohák
+chybí hrana	zástupeček	zástup
+chybí hrana	závazeček	závaz
+chybí hrana	zázemíčko	zázemí
+chybí hrana	zážiteček	zážitek
+chybí hrana	áčko	á
+chybí hrana	úchyláček	úchyl
+chybí hrana	údeček	úd
+chybí hrana	úkolníček	úkolník
+chybí hrana	úleček	úl
+chybí hrana	ústaveček	ústav
+chybí hrana	útulkáček	útulkáč
+chybí hrana	černoočko	černo
+chybí hrana	čertíček	čertí
+chybí hrana	četníček	četník
+chybí hrana	čtyrkolečko	čtyrkole
+chybí hrana	čudlíček	čudl
+chybí hrana	čuráček	čurák
+chybí hrana	ďobáníčko	ďobání
+chybí hrana	ďůleček	ďůlek
+chybí hrana	ňufáníčko	ňufání
+chybí hrana	řebříček	řebř
+chybí hrana	ředitelíček	ředitel
+chybí hrana	řezníček	řezník
+chybí hrana	řešeníčko	řešení
+chybí hrana	řízeček	říz
+chybí hrana	šasíčko	šasí
+chybí hrana	šediváček	šedivák
+chybí hrana	šerifáček	šerif
+chybí hrana	šestikolečko	šestikolo
+chybí hrana	školkáček	školka
+chybí hrana	škrabáček	škrabák
+chybí hrana	škvoreček	škvor
+chybí hrana	šmelináříček	šmelinář
+chybí hrana	šneček	šnek
+chybí hrana	šnuptychlíček	šnuptychl
+chybí hrana	šosáček	šos
+chybí hrana	štemplíček	štempl
+chybí hrana	štofeček	štof
+chybí hrana	štípnutíčko	štípnutí
+chybí hrana	štěňátečko	štěňátko
+chybí hrana	švestkáček	švestkáč
+chybí hrana	šéfíček	šéf
+chybí hrana	šňupáníčko	šňupání
+chybí hrana	ťapáček	ťapka
+chybí hrana	ťuplíček	ťuplík
+chybí hrana	ťupíček	ťupka
+chybí hrana	žalovníček	žalovník
+chybí hrana	žbrdleníčko	žbrdlení
+chybí hrana	žirafáček	žirafák
+chybí hrana	žlučníček	žluční
+chybí hrana	žolíček	žolík
+chybí hrana	žrádlíčko	žrádlo
+chybí hrana	župáneček	župánek
+*
+*nenalezen předek
+chybí hrana	autovláček
+chybí hrana	biobalíček
+chybí hrana	biobůček
+chybí hrana	biochlebíček
+chybí hrana	biosyreček
+chybí hrana	bistříčko
+chybí hrana	božíneček
+chybí hrana	bévépéčko
+chybí hrana	ceklíček
+chybí hrana	chlebáček
+chybí hrana	churáček
+chybí hrana	chydáček
+chybí hrana	crček
+chybí hrana	cveklíček
+chybí hrana	cyklobalíček
+chybí hrana	cykloobleček
+chybí hrana	cykloposlíček
+chybí hrana	cákaneček
+chybí hrana	cédéčko
+chybí hrana	cétéčko
+chybí hrana	derbíčko
+chybí hrana	devítikolečko
+chybí hrana	diarámeček
+chybí hrana	dinovláček
+chybí hrana	diskotričko
+chybí hrana	dvojelpéčko
+chybí hrana	dvojjablíčko
+chybí hrana	dvojrámeček
+chybí hrana	dvojtričko
+chybí hrana	dvoucedéčko
+chybí hrana	dvouháček
+chybí hrana	dvouměstečko
+chybí hrana	dépéháčko
+chybí hrana	dévédéčko
+chybí hrana	ekovláček
+chybí hrana	elpíčko
+chybí hrana	embéčko
+chybí hrana	emhádéčko
+chybí hrana	empívíčko
+chybí hrana	enháčko
+chybí hrana	erpégéčko
+chybí hrana	eskápéčko
+chybí hrana	estékáčko
+chybí hrana	estéčko
+chybí hrana	esúvéčko
+chybí hrana	eurošpekáček
+chybí hrana	fotorámeček
+chybí hrana	foxlíček
+chybí hrana	groček
+chybí hrana	gétéíčko
+chybí hrana	gétéčko
+chybí hrana	hacafráček
+chybí hrana	hnojáček
+chybí hrana	hácéčko
+chybí hrana	igráček
+chybí hrana	jarabáček
+chybí hrana	jednoháček
+chybí hrana	játříčko
+chybí hrana	jéčko
+chybí hrana	kakajíčko
+chybí hrana	kindervajíčko
+chybí hrana	klášteříček
+chybí hrana	kmocháček
+chybí hrana	koromáček
+chybí hrana	kouštíček
+chybí hrana	krakováček
+chybí hrana	kvéčko
+chybí hrana	kácéčko
+chybí hrana	kádéčko
+chybí hrana	káefcéčko
+chybí hrana	lakomeček
+chybí hrana	lejstříčko
+chybí hrana	lesknáček
+chybí hrana	listejček
+chybí hrana	lípaneček
+chybí hrana	lískovníček
+chybí hrana	masakříček
+chybí hrana	mimitaneček
+chybí hrana	motlitebníček
+chybí hrana	mědáček
+chybí hrana	nabodeníčko
+chybí hrana	nadklíček
+chybí hrana	nadroboučko
+chybí hrana	nakraťoučko
+chybí hrana	napařováček
+chybí hrana	naschválníček
+chybí hrana	náháček
+chybí hrana	nákotníček
+chybí hrana	ofuček
+chybí hrana	oplodňáček
+chybí hrana	opékáček
+chybí hrana	otáčko
+chybí hrana	palašníček
+chybí hrana	parovláček
+chybí hrana	pejsáček
+chybí hrana	piditvoreček
+chybí hrana	podkopníček
+chybí hrana	podrámeček
+chybí hrana	protiháček
+chybí hrana	prvoklíček
+chybí hrana	přípeček
+chybí hrana	ragbíčko
+chybí hrana	rastříček
+chybí hrana	referendíčko
+chybí hrana	rýpaneček
+chybí hrana	sedmikolečko
+chybí hrana	selfíčko
+chybí hrana	skoropradědeček
+chybí hrana	smáček
+chybí hrana	smíchováček
+chybí hrana	snídáníčko
+chybí hrana	sourozeneček
+chybí hrana	stereohledáček
+chybí hrana	trojcédéčko
+chybí hrana	trojelpíčko
+chybí hrana	trojroček
+chybí hrana	trojrámeček
+chybí hrana	trojúhleníček
+chybí hrana	trénineček
+chybí hrana	tétéčko
+chybí hrana	téčko
+chybí hrana	třidéčko
+chybí hrana	tříroček
+chybí hrana	tříváleček
+chybí hrana	utíkáček
+chybí hrana	utíkáček
+chybí hrana	učníček
+chybí hrana	uštipáček
+chybí hrana	uštěpáček
+chybí hrana	ušíčko
+chybí hrana	veveřáček
+chybí hrana	vypínáček
+chybí hrana	végéáčko
+chybí hrana	vékávéčko
+chybí hrana	vězníček
+chybí hrana	weercéčko
+chybí hrana	zhasínáček
+chybí hrana	ábíčko
+chybí hrana	átéčko
+chybí hrana	éčko
+chybí hrana	íčko
+chybí hrana	óčko
+chybí hrana	úesbéčko
+chybí hrana	účko
+chybí hrana	čtyřcédéčko
+chybí hrana	čtyřháček
+chybí hrana	čárkoháček
+chybí hrana	ďobaneček
+chybí hrana	řeháček
+chybí hrana	řemíček
+chybí hrana	šampíčko
+chybí hrana	šilháček
+chybí hrana	špaček
+chybí hrana	štiftlíček
+chybí hrana	štípaneček
+chybí hrana	šťouchaneček
+chybí hrana	šůček
+chybí hrana	žehnáček
+chybí hrana	žirardáček
+chybí hrana	žluťoučko

@@ -1,0 +1,421 @@
+*opuštěná slova končící na 'ař'
+*tři skupiny: nalezený rodič, který je častější než nalezené slovo, nalezený rodič, který je méně častý než nalezené slovo, nenalezen rodič
+*chybí hrana	zkoumané slovo	nalezené slovo
+*
+*častější předek
+chybí hrana	Basař	Basa
+chybí hrana	Baňař	Baňa
+chybí hrana	Baštař	Bašta
+chybí hrana	Bělař	Běla
+chybí hrana	Dekař	deka
+chybí hrana	Hadař	had
+chybí hrana	Halčař	Halík
+chybí hrana	Hotař	Hot
+chybí hrana	Hubař	Huba
+chybí hrana	Hunkař	Hunka
+chybí hrana	Huňař	Huňa
+chybí hrana	Jančař	Janča
+chybí hrana	Kaffař	Kaffa
+chybí hrana	Kačmař	Kačák
+chybí hrana	Klackař	Klacek
+chybí hrana	Korbař	Korba
+chybí hrana	Kosař	kosa
+chybí hrana	Kotař	kota
+chybí hrana	Krosnař	krosna
+chybí hrana	Krupař	Krupa
+chybí hrana	Krčmař	Krčma
+chybí hrana	Kubař	Kuba
+chybí hrana	Lepař	lep
+chybí hrana	Likař	Lika
+chybí hrana	Liškař	Liška
+chybí hrana	Liščař	Lišák
+chybí hrana	Lochař	Loch
+chybí hrana	Machař	macha
+chybí hrana	Masař	masa
+chybí hrana	Misař	mise
+chybí hrana	Mlíkař	Mlíka
+chybí hrana	Mísař	mísa
+chybí hrana	Pluhař	pluh
+chybí hrana	Ruchař	ruch
+chybí hrana	Rybař	Ryba
+chybí hrana	Sakař	Sak
+chybí hrana	Sečkař	Sečka
+chybí hrana	Sitař	Sita
+chybí hrana	Smolař	Smola
+chybí hrana	Solař	Sol
+chybí hrana	Sytař	sytý
+chybí hrana	Sítař	sít
+chybí hrana	Valchař	Valcha
+chybí hrana	Vidlař	vidle
+chybí hrana	Vinař	vina
+chybí hrana	Včelař	včela
+chybí hrana	Zachař	Zacha
+chybí hrana	Zvonař	zvon
+chybí hrana	baňkař	baňka
+chybí hrana	beachař	beach
+chybí hrana	benčař	benč
+chybí hrana	blogař	blog
+chybí hrana	bobař	bob
+chybí hrana	bojař	boj
+chybí hrana	bombař	bomba
+chybí hrana	boulař	boule
+chybí hrana	bowlař	bowl
+chybí hrana	breakař	break
+chybí hrana	brejkař	brejk
+chybí hrana	brokař	brok
+chybí hrana	bronzař	bronz
+chybí hrana	broukař	brouk
+chybí hrana	brouskař	brousek
+chybí hrana	brýlař	brýle
+chybí hrana	bukař	buk
+chybí hrana	chcankař	chcanky
+chybí hrana	chytař	chyt
+chybí hrana	cykloznačkař	cykloznačka
+chybí hrana	cévař	céva
+chybí hrana	downtempař	downtempo
+chybí hrana	dredař	dredy
+chybí hrana	dresař	dres
+chybí hrana	driftař	drift
+chybí hrana	drvař	drak
+chybí hrana	dvackař	dvacka
+chybí hrana	dvojkař	dvojka
+chybí hrana	dávkař	dávka
+chybí hrana	děckař	děcák
+chybí hrana	džbánkař	džbánek
+chybí hrana	džípař	džíp
+chybí hrana	emař	emu
+chybí hrana	erkař	erko
+chybí hrana	fajfkař	fajfka
+chybí hrana	fichtlař	fichtl
+chybí hrana	filckař	filcka
+chybí hrana	flejmař	flejma
+chybí hrana	formař	forma
+chybí hrana	fázař	fáze
+chybí hrana	fórkař	fórek
+chybí hrana	glosař	glosa
+chybí hrana	hadař	had
+chybí hrana	haikař	haiku
+chybí hrana	haldař	halda
+chybí hrana	helmař	helma
+chybí hrana	hitař	hit
+chybí hrana	hlídkař	hlídka
+chybí hrana	hnidař	hnida
+chybí hrana	hodař	hod
+chybí hrana	hranař	hrana
+chybí hrana	hrazdař	hrazda
+chybí hrana	hruškař	hruška
+chybí hrana	hubkař	hubka
+chybí hrana	hymnař	hymna
+chybí hrana	hřibař	hřib
+chybí hrana	hříčkař	hříčka
+chybí hrana	hůlkař	hůlka
+chybí hrana	jedař	jed
+chybí hrana	jurtař	jurta
+chybí hrana	kajtař	kajak
+chybí hrana	kitař	kit
+chybí hrana	klapkař	klapka
+chybí hrana	klihař	klih
+chybí hrana	kličkař	klička
+chybí hrana	knejpař	knejp
+chybí hrana	kolkař	kolik
+chybí hrana	koňkař	koňka
+chybí hrana	kradař	kradí
+chybí hrana	krbař	krb
+chybí hrana	krokař	krok
+chybí hrana	krátkař	krátký
+chybí hrana	krčař	krok
+chybí hrana	kušař	kuše
+chybí hrana	kárkař	kárka
+chybí hrana	kůlař	kůl
+chybí hrana	lasař	laso
+chybí hrana	laufař	lauf
+chybí hrana	leptař	lept
+chybí hrana	linkař	linka
+chybí hrana	malorážkař	malorážka
+chybí hrana	mapař	mapa
+chybí hrana	masař	masa
+chybí hrana	mechař	mech
+chybí hrana	mincař	mince
+chybí hrana	moštař	mošt
+chybí hrana	navijákař	naviják
+chybí hrana	notař	nota
+chybí hrana	nůžkař	nůžky
+chybí hrana	osmaosmdesátkař	osmaosmdesátka
+chybí hrana	osmař	osma
+chybí hrana	osmibojař	osmiboj
+chybí hrana	patař	pata
+chybí hrana	pažbař	pažba
+chybí hrana	perestrojkař	perestrojka
+chybí hrana	perlař	perla
+chybí hrana	platař	plat
+chybí hrana	plavkař	plavka
+chybí hrana	plečkař	plečka
+chybí hrana	plotař	plot
+chybí hrana	plsťař	plsť
+chybí hrana	plťař	plť
+chybí hrana	popař	pop
+chybí hrana	poptextař	poptext
+chybí hrana	portař	porta
+chybí hrana	pouzdrař	pouzdro
+chybí hrana	prknař	prkno
+chybí hrana	proudař	proud
+chybí hrana	prámař	prám
+chybí hrana	práškař	prášek
+chybí hrana	psíčkař	psíček
+chybí hrana	ptáčkař	ptáček
+chybí hrana	pudlař	pudl
+chybí hrana	péčkař	péčko
+chybí hrana	píkař	píka
+chybí hrana	pětapadesátkař	pětapadesátka
+chybí hrana	pětkař	pětka
+chybí hrana	půstař	půst
+chybí hrana	půtkař	půtka
+chybí hrana	rampař	rampa
+chybí hrana	repař	repo
+chybí hrana	rikšař	rikša
+chybí hrana	rourař	roura
+chybí hrana	rýmař	rýma
+chybí hrana	rýnař	rýna
+chybí hrana	sedmistovkař	sedmistovka
+chybí hrana	silař	silo
+chybí hrana	skalkař	skalka
+chybí hrana	skeetař	skeet
+chybí hrana	skejtař	skejt
+chybí hrana	skládkař	skládka
+chybí hrana	sklínkař	sklínka
+chybí hrana	skútrař	skútr
+chybí hrana	slanař	slaný
+chybí hrana	slipař	slipy
+chybí hrana	spodkař	spodek
+chybí hrana	spolkař	spolek
+chybí hrana	sprchař	sprcha
+chybí hrana	srabař	srab
+chybí hrana	sračkař	sračka
+chybí hrana	steeplař	steepl
+chybí hrana	stopětkař	stopětka
+chybí hrana	stresař	stres
+chybí hrana	stromkař	stromek
+chybí hrana	struskař	struska
+chybí hrana	stávkař	stávka
+chybí hrana	stínař	stín
+chybí hrana	stěrkař	stěrka
+chybí hrana	středoproudař	středoproudý
+chybí hrana	střevař	střevo
+chybí hrana	subkomisař	subkomise
+chybí hrana	subtextař	subtext
+chybí hrana	sudař	sud
+chybí hrana	sušař	suše
+chybí hrana	svrabař	svrab
+chybí hrana	svrškař	svršek
+chybí hrana	sítař	sít
+chybí hrana	síťkař	síťka
+chybí hrana	tangař	tango
+chybí hrana	topkař	topka
+chybí hrana	travař	travé
+chybí hrana	traťař	trať
+chybí hrana	trendař	trend
+chybí hrana	trenkař	trenky
+chybí hrana	trávař	tráva
+chybí hrana	vachař	vacha
+chybí hrana	vachtař	vachta
+chybí hrana	vanař	vana
+chybí hrana	vatař	vata
+chybí hrana	vestař	vesta
+chybí hrana	vinklař	vinkl
+chybí hrana	vinotékař	vinotéka
+chybí hrana	vlakař	vlak
+chybí hrana	vlasař	vlas
+chybí hrana	vlečkař	vlečka
+chybí hrana	vláknař	vlákno
+chybí hrana	vodkař	vodka
+chybí hrana	vrhař	vrh
+chybí hrana	vrátkař	vrátka
+chybí hrana	vsázkař	vsázka
+chybí hrana	vtipař	vtip
+chybí hrana	vtipkař	vtipek
+chybí hrana	vzduchař	vzduch
+chybí hrana	vzorkař	vzorek
+chybí hrana	vážkař	vážka
+chybí hrana	vědař	věda
+chybí hrana	ymkař	ymka
+chybí hrana	zdrojař	zdroj
+chybí hrana	zmetkař	zmetek
+chybí hrana	zmijař	zmije
+chybí hrana	znělkař	znělka
+chybí hrana	zvonkař	zvonek
+chybí hrana	zámkař	zámek
+chybí hrana	áčkař	áčko
+chybí hrana	Čižmař	čižma
+chybí hrana	Čmuchař	Čmucha
+chybí hrana	Čížmař	Čížek
+chybí hrana	čajař	čaj
+chybí hrana	čerpař	čerp
+chybí hrana	četkař	četka
+chybí hrana	článkař	článek
+chybí hrana	čtvrtstovkař	čtvrtstovka
+chybí hrana	čtyřicítkař	čtyřicítka
+chybí hrana	čárkař	čárka
+chybí hrana	čírař	číro
+chybí hrana	Římař	Řím
+chybí hrana	řízkař	řízek
+chybí hrana	Šiftař	Šifta
+chybí hrana	Školař	škola
+chybí hrana	Štětař	štět
+chybí hrana	Štětkař	Štětka
+chybí hrana	šestibojař	šestiboj
+chybí hrana	šestistovkař	šestistovka
+chybí hrana	šestkař	šestka
+chybí hrana	škrobař	škrob
+chybí hrana	škvárař	škvára
+chybí hrana	šlichtař	šlichta
+chybí hrana	šméčkař	šméčko
+chybí hrana	šmírař	šmíra
+chybí hrana	šnorchlař	šnorchl
+chybí hrana	šrotař	šrot
+chybí hrana	štěrkař	štěrk
+chybí hrana	šumař	šum
+chybí hrana	šátkař	šátek
+chybí hrana	šídlař	šídlo
+chybí hrana	šípkař	šípek
+chybí hrana	šístkař	šístka
+chybí hrana	žinkař	žinka
+*
+*méně častý předek
+chybí hrana	Bidař	Bida
+chybí hrana	Blanař	Blan
+chybí hrana	Budař	Buda
+chybí hrana	Chmelař	Chmela
+chybí hrana	Hrobař	Hrob
+chybí hrana	Hutař	Huta
+chybí hrana	Kalfař	Kalfa
+chybí hrana	Kočař	Koča
+chybí hrana	Košař	Koša
+chybí hrana	Kuchař	Kuch
+chybí hrana	Pekař	Peka
+chybí hrana	Pilař	Pila
+chybí hrana	Prachař	Prach
+chybí hrana	Solnař	Solík
+chybí hrana	Stavař	Stav
+chybí hrana	Voslař	Vosík
+chybí hrana	bachař	bach
+chybí hrana	béčkař	béčák
+chybí hrana	chůdař	chůdy
+chybí hrana	deblař	debl
+chybí hrana	trakař	trak
+chybí hrana	vláčkař	vláčka
+chybí hrana	Šmukař	šmuk
+chybí hrana	Štěpař	Štěp
+chybí hrana	šraňkař	šraňka
+*
+*nenalezen předek
+chybí hrana	Blejchař
+chybí hrana	Cysař
+chybí hrana	Císař
+chybí hrana	Cýsař
+chybí hrana	Hostivař
+chybí hrana	Jaktař
+chybí hrana	Jermař
+chybí hrana	Líkař
+chybí hrana	Lžičař
+chybí hrana	Ohař
+chybí hrana	Písař
+chybí hrana	Stolař
+chybí hrana	Uřičař
+chybí hrana	altkař
+chybí hrana	autokomisař
+chybí hrana	autotrakař
+chybí hrana	benchař
+chybí hrana	biopekař
+chybí hrana	biovinař
+chybí hrana	bmxař
+chybí hrana	breakcorař
+chybí hrana	bróskař
+chybí hrana	burdelař
+chybí hrana	cyklopivař
+chybí hrana	dlouhotraťař
+chybí hrana	dogtrekař
+chybí hrana	drabař
+chybí hrana	druhometař
+chybí hrana	dvojkomisař
+chybí hrana	dyjař
+chybí hrana	ekosadař
+chybí hrana	ethnovlnař
+chybí hrana	exbachař
+chybí hrana	excyklokrosař
+chybí hrana	exdiskař
+chybí hrana	exeurokomisař
+chybí hrana	exkomisař
+chybí hrana	gonkař
+chybí hrana	hnojař
+chybí hrana	jódlař
+chybí hrana	kamenosochař
+chybí hrana	kitesurfař
+chybí hrana	kovofrézař
+chybí hrana	kradlař
+chybí hrana	krasobruslař
+chybí hrana	krasokličkař
+chybí hrana	krupař
+chybí hrana	kypař
+chybí hrana	ledosochař
+chybí hrana	loktař
+chybí hrana	líhnař
+chybí hrana	líkař
+chybí hrana	malovinař
+chybí hrana	meziplotař
+chybí hrana	minibikař
+chybí hrana	miškař
+chybí hrana	místopísař
+chybí hrana	měkkosrdcař
+chybí hrana	neofolkař
+chybí hrana	niťař
+chybí hrana	nožař
+chybí hrana	plicař
+chybí hrana	ploutvař
+chybí hrana	pluskař
+chybí hrana	pornofolkař
+chybí hrana	pornozvukař
+chybí hrana	profikuchař
+chybí hrana	průmkař
+chybí hrana	pánvař
+chybí hrana	retrolyžař
+chybí hrana	rostlinolékař
+chybí hrana	rychlobruslař
+chybí hrana	rychlolyžař
+chybí hrana	rychlopísař
+chybí hrana	serfař
+chybí hrana	skorokomisař
+chybí hrana	sledkař
+chybí hrana	slévař
+chybí hrana	snowboardcrossař
+chybí hrana	sněhař
+chybí hrana	spolucísař
+chybí hrana	staskař
+chybí hrana	streetař
+chybí hrana	stýplař
+chybí hrana	středopolař
+chybí hrana	středotraťař
+chybí hrana	vahař
+chybí hrana	velkopekař
+chybí hrana	velkorejdař
+chybí hrana	velkovinař
+chybí hrana	velkovčelař
+chybí hrana	volnostylař
+chybí hrana	vozař
+chybí hrana	vzdorocísař
+chybí hrana	zadopolař
+chybí hrana	účtař
+chybí hrana	Čihař
+chybí hrana	Čmuhař
+chybí hrana	čorkař
+chybí hrana	čučkař
+chybí hrana	Řičař
+chybí hrana	Říčař
+chybí hrana	Šlahař
+chybí hrana	Šrubař
+chybí hrana	štelař
+chybí hrana	šéfbachař
+chybí hrana	šéfkomisař
+chybí hrana	šéfkuchař
+chybí hrana	šéflékař
+chybí hrana	šéfpekař
+chybí hrana	Žličař

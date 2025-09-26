@@ -1,0 +1,344 @@
+*podstatná jména končící na 'ista' bez rodiče
+*dvě skupiny: nalezený rodič a nenalezený rodič
+*chybí hrana	zkoumané slovo	nalezené slovo
+*
+*nalezen předek
+chybí hrana	afišista	afiš
+chybí hrana	akcesista	akcese
+chybí hrana	alternativista	alternativa
+chybí hrana	antiradarista	antiradar
+chybí hrana	arborista	arboristika
+chybí hrana	arcikomunista	komunista
+chybí hrana	arciterorista	terorista
+chybí hrana	arista	ar
+chybí hrana	atlantista	atlant
+chybí hrana	avalista	aval
+chybí hrana	baasista	baasismus
+chybí hrana	babetista	babeta
+chybí hrana	babytenista	babyten
+chybí hrana	bahaista	bahaismus
+chybí hrana	balista	balistika
+chybí hrana	balkanista	balkanistika
+chybí hrana	ballista	ball
+chybí hrana	bandažista	bandaž
+chybí hrana	bandurista	bandur
+chybí hrana	barokista	barokismus
+chybí hrana	bestselerista	bestseler
+chybí hrana	bilancista	bilance
+chybí hrana	blábolista	blábolismus
+chybí hrana	bulharista	bulharistika
+chybí hrana	bulvarista	bulvar
+chybí hrana	camorrista	camorra
+chybí hrana	capoeirista	capoeira
+chybí hrana	castrista	castrismus
+chybí hrana	cykloaktivista	aktivista
+chybí hrana	cykloextremista	extremista
+chybí hrana	cyklonudista	nudista
+chybí hrana	cyklospecialista	specialista
+chybí hrana	davista	dav
+chybí hrana	deblkanoista	deblkano
+chybí hrana	dekorativista	dekorativismus
+chybí hrana	detektorista	detektor
+chybí hrana	dialogista	dialog
+chybí hrana	difuzionista	difuzionismus
+chybí hrana	dimotikista	dimotikismus
+chybí hrana	donatista	donatismus
+chybí hrana	děkabrista	děkabrismus
+chybí hrana	egodeista	egodeismus
+chybí hrana	egofuturista	egofuturismus
+chybí hrana	ekoaktivista	aktivista
+chybí hrana	elektromobilista	elektromobil
+chybí hrana	elementarista	elementarismus
+chybí hrana	etatista	etatismus
+chybí hrana	eurofederalista	eurofederalismus
+chybí hrana	europesimista	europesimismus
+chybí hrana	evropeista	evropeismus
+chybí hrana	excentrista	centrista
+chybí hrana	exfederalista	federalista
+chybí hrana	exfotbalista	fotbalista
+chybí hrana	exlibrista	exlibr
+chybí hrana	exligista	ligista
+chybí hrana	exorcista	exorcismus
+chybí hrana	experimentalista	experimentalismus
+chybí hrana	expučista	pučista
+chybí hrana	exsocialista	socialista
+chybí hrana	exterorista	terorista
+chybí hrana	fakturista	faktura
+chybí hrana	fauvista	fauvismus
+chybí hrana	flancista	flanc
+chybí hrana	freestylista	freestyl
+chybí hrana	freudista	freudismus
+chybí hrana	frézista	fréza
+chybí hrana	fyskulturista	fyskultura
+chybí hrana	goista	go
+chybí hrana	gonochorista	gonochorismus
+chybí hrana	havlista	havlismus
+chybí hrana	hispanista	hispanistika
+chybí hrana	hlasista	hlasismus
+chybí hrana	hungarista	hungarismus
+chybí hrana	imagista	imagismus
+chybí hrana	imažinista	imažinismus
+chybí hrana	indianista	indianismus
+chybí hrana	industrialista	industrialismus
+chybí hrana	inkasista	inkaso
+chybí hrana	intuicionista	intuicionismus
+chybí hrana	italista	italismus
+chybí hrana	jansenista	jansenismus
+chybí hrana	japanista	japanismus
+chybí hrana	jurista	jura
+chybí hrana	kaligrafista	kaligraf
+chybí hrana	kanoepolista	kanoepolo
+chybí hrana	kanoista	kanoistika
+chybí hrana	karambolista	karambolismus
+chybí hrana	kardiospecialista	specialista
+chybí hrana	kartelista	kartel
+chybí hrana	kasuista	kasuistika
+chybí hrana	kimbanguista	kimbanguismus
+chybí hrana	kitharista	kithara
+chybí hrana	klerofašista	klerofašismus
+chybí hrana	kolista	kol
+chybí hrana	komandista	komando
+chybí hrana	konceptualista	konceptualismus
+chybí hrana	konjukturalista	konjukturalismus
+chybí hrana	konsekvencialista	konsekvencialismus
+chybí hrana	konstitucionalista	konstitucionalismus
+chybí hrana	konturista	kontura
+chybí hrana	konzolista	konzole
+chybí hrana	kopista	kop
+chybí hrana	kopálista	kopál
+chybí hrana	kreacionista	kreacionismus
+chybí hrana	kryptotrockista	trockista
+chybí hrana	kubofuturista	kubofuturismus
+chybí hrana	kušista	kuše
+chybí hrana	kvietista	kvietismus
+chybí hrana	kyberterorista	terorista
+chybí hrana	lamaista	lamaismus
+chybí hrana	legista	legismus
+chybí hrana	legitimista	legitimismus
+chybí hrana	lista	l
+chybí hrana	logista	logistika
+chybí hrana	majorista	majorismus
+chybí hrana	makista	mako
+chybí hrana	manicheista	manicheismus
+chybí hrana	martinista	martini
+chybí hrana	marxleninista	marxleninismus
+chybí hrana	medievalista	medievalistika
+chybí hrana	metodista	metodismus
+chybí hrana	minorista	minor
+chybí hrana	mobilista	mobilismus
+chybí hrana	modemista	modem
+chybí hrana	mohista	mohismus
+chybí hrana	molinista	molin
+chybí hrana	mongolista	mongolismus
+chybí hrana	montanista	montanismus
+chybí hrana	monumentalista	monumentalismus
+chybí hrana	mopedista	moped
+chybí hrana	morganista	morganismus
+chybí hrana	multiinstrumentalista	instrumentalista
+chybí hrana	musarista	musar
+chybí hrana	nacionálkomunista	nacionálkomunismus
+chybí hrana	nativista	nativismus
+chybí hrana	neutralista	neutralismus
+chybí hrana	novochartista	chartista
+chybí hrana	novokolonista	kolonista
+chybí hrana	novokomunista	komunista
+chybí hrana	novonacista	nacista
+chybí hrana	novorealista	realista
+chybí hrana	novoutrakvista	utrakvista
+chybí hrana	okulista	okulistika
+chybí hrana	oranžista	oranž
+chybí hrana	orfista	orfismus
+chybí hrana	organista	organismus
+chybí hrana	ortelista	ortel
+chybí hrana	paleoslovenista	paleoslovenistika
+chybí hrana	parnasista	parnasismus
+chybí hrana	pascalista	pascal
+chybí hrana	pista	None
+chybí hrana	plutonista	plutonismus
+chybí hrana	podágrista	podágra
+chybí hrana	pointilista	pointilismus
+chybí hrana	polonista	polonistika
+chybí hrana	popartista	popart
+chybí hrana	postfašista	fašista
+chybí hrana	preformista	preformismus
+chybí hrana	prohibicionista	prohibicionismus
+chybí hrana	protagonista	protagonismus
+chybí hrana	protista	prot
+chybí hrana	protista	prot
+chybí hrana	proudhonista	proudhonismus
+chybí hrana	pétainista	pétainismus
+chybí hrana	revanšista	revanšismus
+chybí hrana	rešeršista	rešerše
+chybí hrana	ritualista	ritualismus
+chybí hrana	robopolicista	policista
+chybí hrana	romista	romistika
+chybí hrana	ruralista	ruralismus
+chybí hrana	rádobyhumanista	rádobyhumanismus
+chybí hrana	scientista	scientismus
+chybí hrana	senzualista	senzualismus
+chybí hrana	singlista	singl
+chybí hrana	singlkánoista	singlkáno
+chybí hrana	singularista	singularismus
+chybí hrana	skandinavista	skandinavismus
+chybí hrana	skorofašista	fašista
+chybí hrana	slopestylista	slopestyl
+chybí hrana	slovakista	slovakismus
+chybí hrana	slávista	sláv
+chybí hrana	sobotista	sobota
+chybí hrana	sociálfašista	fašista
+chybí hrana	sociálšovinista	šovinista
+chybí hrana	socrealista	socrealismus
+chybí hrana	softwarista	software
+chybí hrana	sonografista	sonograf
+chybí hrana	spoluprokurista	prokurista
+chybí hrana	spoluscénárista	scénárista
+chybí hrana	starobuddhista	buddhista
+chybí hrana	staroklubista	klubista
+chybí hrana	starokomunista	komunista
+chybí hrana	staroslávista	slávista
+chybí hrana	starosurrealista	surrealista
+chybí hrana	starotankista	tankista
+chybí hrana	staroutrakvista	utrakvista
+chybí hrana	suprematista	suprematismus
+chybí hrana	sólofagotista	fagotista
+chybí hrana	súfista	súfismus
+chybí hrana	technologista	technolog
+chybí hrana	trapista	trap
+chybí hrana	trecentista	trecento
+chybí hrana	typista	typ
+chybí hrana	ugrofinista	ugrofinistika
+chybí hrana	ukulelista	ukulele
+chybí hrana	ultrakomunista	komunista
+chybí hrana	vaudevillista	vaudeville
+chybí hrana	vedutista	veduta
+chybí hrana	videožurnalista	videožurnalistika
+chybí hrana	virválista	virvál
+chybí hrana	vizualista	vizualismus
+chybí hrana	višnuista	višnuismus
+chybí hrana	vulkanista	vulkanismus
+chybí hrana	weltschmerzista	weltschmerz
+chybí hrana	zenbuddhista	zenbuddhismus
+chybí hrana	čechocentrista	čechocentrismus
+chybí hrana	šivaista	šivaismus
+chybí hrana	šprýmista	šprým
+chybí hrana	švandista	švanda
+*
+*nenalezen předek
+chybí hrana	adoptacionista
+chybí hrana	afrocentrista
+chybí hrana	amigista
+chybí hrana	anacionalista
+chybí hrana	analista
+chybí hrana	anarchokomunista
+chybí hrana	animalkulista
+chybí hrana	antibufonista
+chybí hrana	arkanista
+chybí hrana	artilerista
+chybí hrana	benthamista
+chybí hrana	bhagwanista
+chybí hrana	blanquista
+chybí hrana	bloggista
+chybí hrana	boccista
+chybí hrana	bodyartista
+chybí hrana	bollandista
+chybí hrana	brnkálista
+chybí hrana	buffonista
+chybí hrana	bukinista
+chybí hrana	canyonista
+chybí hrana	conquista
+chybí hrana	diurnista
+chybí hrana	druholigista
+chybí hrana	eqilibrista
+chybí hrana	espiritista
+chybí hrana	eurospecialista
+chybí hrana	evropanista
+chybí hrana	familista
+chybí hrana	fanfarista
+chybí hrana	fashionista
+chybí hrana	generativista
+chybí hrana	giordanista
+chybí hrana	girondista
+chybí hrana	graffista
+chybí hrana	grosista
+chybí hrana	guesdista
+chybí hrana	hamasista
+chybí hrana	herbarista
+chybí hrana	hermesianista
+chybí hrana	hébertista
+chybí hrana	izoseista
+chybí hrana	joachymista
+chybí hrana	kemalista
+chybí hrana	kognitivista
+chybí hrana	komaditista
+chybí hrana	komanditista
+chybí hrana	konkretista
+chybí hrana	labourista
+chybí hrana	lefebvrista
+chybí hrana	lepenista
+chybí hrana	lokalista
+chybí hrana	lyceista
+chybí hrana	martinézista
+chybí hrana	meliorista
+chybí hrana	modalista
+chybí hrana	mortikalista
+chybí hrana	mpadista
+chybí hrana	multiistrumentalista
+chybí hrana	nabista
+chybí hrana	nefigurativista
+chybí hrana	neobehaviorista
+chybí hrana	neogaullista
+chybí hrana	neomahdista
+chybí hrana	nobelista
+chybí hrana	okťabrista
+chybí hrana	optometrista
+chybí hrana	originalista
+chybí hrana	ortoptista
+chybí hrana	ovista
+chybí hrana	ovulista
+chybí hrana	parfumerista
+chybí hrana	pasionista
+chybí hrana	pentekostalista
+chybí hrana	pikardista
+chybí hrana	preraffaelista
+chybí hrana	profesionista
+chybí hrana	proficyklista
+chybí hrana	prvoligista
+chybí hrana	punknacista
+chybí hrana	quattrista
+chybí hrana	rabulista
+chybí hrana	reconquista
+chybí hrana	redemptorista
+chybí hrana	regentorista
+chybí hrana	repealista
+chybí hrana	rizalista
+chybí hrana	rugbista
+chybí hrana	rustikalista
+chybí hrana	rychlokarikaturista
+chybí hrana	rádobyavantgardista
+chybí hrana	samplista
+chybí hrana	sandinista
+chybí hrana	sebeočista
+chybí hrana	secesionista
+chybí hrana	semifinalista
+chybí hrana	senderista
+chybí hrana	slovinista
+chybí hrana	sofsemista
+chybí hrana	sufražista
+chybí hrana	tabletenista
+chybí hrana	televangelista
+chybí hrana	tolkienista
+chybí hrana	tradeunionista
+chybí hrana	tradicionista
+chybí hrana	tritagonista
+chybí hrana	ufoturista
+chybí hrana	ultrakvista
+chybí hrana	urbarialista
+chybí hrana	velkodrogista
+chybí hrana	verbista
+chybí hrana	vichista
+chybí hrana	vikarista
+chybí hrana	xBasista
+chybí hrana	zviadista
+chybí hrana	čalfista
+chybí hrana	čtvrtfinalista
+chybí hrana	čutálista
