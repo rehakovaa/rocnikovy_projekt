@@ -91,31 +91,32 @@ Určená skupina pro daný test se nachází na prvním místě názvu daného t
 
 Nejčastěji jsem testovala slova podle koncovek. Například přídavná jména končící na ‚čin‘ by měla být připojena k podstatnému jménu. Ne pro všechna slova, která tyto testy našly, se mi podařilo najít možného předka.
 
-Přikládám tedy graf podle (ne)nalezení možného předka u deseti náhodně vybraných testů zabývající se podobnou myšlenkou, a k tomu průměrné hodnoty.
+Přikládám tedy graf podle (ne)nalezení možného předka u deseti náhodně vybraných testů zabývajících se podobnou myšlenkou, a k tomu průměrné hodnoty.
 
 ![graf - ůspěšnost nalezených slov a rodičů v E_Osamoceny/a](uspesnost_E_Osam.png)
 
-Jde vidět, že ačkoliv všechny testy jsou na stavěné na podobný typ chyby, neznamená to, že najdou podobný počet hodnot.
+Jde vidět, že ačkoliv všechny testy jsou stavěné na podobný typ chyby, neznamená to, že najdou podobný počet hodnot.
 
 *Kategorie*
 
-Jak již bylo zmíněno, neexistuje jednotná kategorie, přikládám tedy koláčový graf, na kterém jde vidět, jaké rozložené v počtu vzniklých výstupních souborů mezi kategoriemi 
+Jak již bylo zmíněno, neexistuje jednotná kategorie, přikládám tedy koláčový graf, na kterém jde vidět, jaké je rozložení v počtu vzniklých výstupních souborů mezi kategoriemi vážnosti. 
 
 ![graf - rozdělení testů podle kategorie závažnosti](kategorie_testu.png)
 
 *Nejasný typ vztahu*
 
-V databázi se nachází spoustu slov, které se liší pouze vynechaným h, tedy například *gothaj* a *gotaj*, nebo změnou z *z* na *s* anebo odebráním zdvojeného písmena. Jde vidět, že neexistuje jednotné pravidlo, jak a zda vůbec by tato slova měla být spojena. Napsala jsem tedy test, který tyto úkazy v databázi projde a poté seřadí jednotlivé kategorie podle toho počtu slov.
+V databázi se nachází spoustu slov, které se liší pouze vynechaným *h*, tedy například *gothaj* a *gotaj*, nebo změnou z *z* na *s* anebo odebráním zdvojeného písmena. Jde vidět, že neexistuje jednotné pravidlo, jak a zda vůbec by tato slova měla být spojena. Napsala jsem tedy test, který tyto úkazy v databázi projde a poté seřadí jednotlivé kategorie podle toho počtu slov.
 
 ![graf - jak jsou rozloženy vztahy mezi danými dvojicemi](alfonz_vztahy.png)
 
 *Přídavná jména končící na 'čin' a 'ův'*
 
-Tato přídavná jména by měla být připojena pod podstatným jménem rodu ženského, respektive rodu mužského. Stejně jako u předchozího příkladu, však neexistuje jednotné pravidlo. Často slovům rodič chybí, poté jejich hlavním rodičem není očekávaný typ slova anebo jsou vzdáleně příbuzní. 
+Tato přídavná jména by měla být připojena pod podstatným jménem rodu ženského, respektive rodu mužského. Stejně jako u předchozího příkladu však neexistuje jednotné pravidlo. Často slovům rodič chybí, poté jejich hlavním rodičem není očekávaný typ slova anebo jsou vzdáleně příbuzní. 
 
 Pro oba případy přikládám grafy popisující rozložení těchto případů.
 
 ![graf - vztahy mezi nalezenými slovy končící na 'čin' a jejich předky](Cin_graf.png)
 
 ![graf - vztahy mezi nalezenými slovy končící na 'ův' a jejich předky](Uv_graf.png)
+
 
